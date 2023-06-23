@@ -1,0 +1,11 @@
+{
+    "title": "MANDY",
+    "description": "A hypersonic static-site generator written in Rust.",
+    "prod_url": "/mandy_site",
+    "dev_url": "",
+    "logo_url": "https://avatars.githubusercontent.com/u/112771657?v=4",
+    "motto": "Hypersonic static-site generation.",
+    "copyAssets": "false",
+    "hasLoopContent": "true",
+    "loopContentDir": "documentation"
+}
