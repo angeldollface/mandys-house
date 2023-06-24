@@ -5,5 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: angeldollface/mandy-github-action@v.0.1
+      - name: "Set Mandy compilation environment."
+        run: export MANDY_ENV="production"
+      - name: "Verify Mandy compilation environment."
+        run: echo $MANDY_ENV
       - name: "Build the site."
         run: ls && mandy -c .
