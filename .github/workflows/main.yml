@@ -9,5 +9,7 @@ jobs:
       - uses: angeldollface/mandy-github-action@v.0.1
       - name: "Verify Mandy compilation environment."
         run: echo $MANDY_ENV
+      - name: "Get current working directory."
+        run: pwd
       - name: "Build the site."
         run: ls && mandy -c .
