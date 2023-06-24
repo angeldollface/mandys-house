@@ -11,5 +11,9 @@ jobs:
         run: echo $MANDY_ENV
       - name: "Get current working directory."
         run: pwd
+      - name: "Check for config file."
+        run: file config.json
       - name: "Build the site."
-        run: ls && mandy -c .
+        run: |
+          ls
+          mandy -c .
