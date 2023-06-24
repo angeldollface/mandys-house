@@ -1,0 +1,9 @@
+on: [push]
+name: Mandy CI
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Build the site."
+        uses: angeldollface/mandy-github-action@v1
+        run: mandy -c ./
