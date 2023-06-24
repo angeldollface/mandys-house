@@ -8,11 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: angeldollface/mandy-github-action@v.0.1
-      - name: "Verify Mandy compilation environment."
-        run: echo $MANDY_ENV
-      - name: "Get current working directory."
-        run: pwd
-      - name: "Check for config file."
-        run: file config.json
-      - name: "List current files"
-        run: ls
+      - name: "Build the Mandy site"
+        run: mandy -c .
