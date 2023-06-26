@@ -1,0 +1,108 @@
+<!--
+MANDY'S HOUSE by Alexander Abraham a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+-->
+
+<!DOCTYPE html>
+<html>
+
+ <head>
+
+  <!--Header section.-->
+  <title>Scaffolding a site</title>
+  <meta property="og:image:type" content="image/png">
+  <title>MANDY | Scaffolding a site</title>
+  <meta name="twitter:image:type" content="image/png">
+  <meta property="og:image" content="/mandys-houseassets/banner/banner.png">
+  <meta property="twitter:image" content="/mandys-houseassets/banner/banner.png">
+  <meta property="og:name" content="MANDY">
+  <meta property="og:description" content="A hypersonic static-site generator written in Rust.">
+  <meta name="twitter:name" content="MANDY">
+  <meta name="keywords" content="static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="MANDY">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A hypersonic static-site generator written in Rust.">
+  <meta name="twitter:description" content="A hypersonic static-site generator written in Rust.">
+  <link rel="stylesheet" href="/mandys-housecss/index.css" type="text/css"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="/mandys-houseassets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/mandys-houseassets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/mandys-houseassets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/mandys-houseassets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/mandys-houseassets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/mandys-houseassets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/mandys-houseassets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/mandys-houseassets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/mandys-houseassets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/mandys-houseassets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/mandys-houseassets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/mandys-houseassets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/mandys-houseassets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/mandys-houseassets/icon_info/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/mandys-houseassets/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&display=swap" rel="stylesheet">
+ </head>
+
+ <body>
+
+  <!--Heading section.-->
+  <div class="header">
+   <h1 onclick="openNav('nav');">MENU</h1>
+  </div>
+
+  <!--Navigation section.-->
+  <div class="nav" id="nav">
+   <ul class="nav">
+    
+    <li class="nav"><a class="nav" href="/mandys-house">Home</a></li>
+    
+    <li class="nav"><a class="nav" href="/mandys-housecontent/about">About</a></li>
+    
+    <li class="nav"><a class="nav" href="/mandys-housecontent/documentation">Documentation</a></li>
+    
+    <li class="nav"><a class="nav" href="javascript:void(0);" onclick="closeNav('nav')">Close</a></li>
+   </ul>
+  </div>
+
+  <!--Fancy section.-->
+  <div class="landing">
+   <h1 class="landing">Scaffolding a site</h1>
+   <p class="landing">Scaffolding a new Mandy-powered site.</p>
+  </div>
+
+  <!--Content section.-->
+  <div class="main">
+   <div class="content">
+    <h2 id='scaffolding_a_new_mandy-powered_site'>SCAFFOLDING A NEW MANDY-POWERED SITE</h2>
+
+<p>Since Mandy&#8217;s core philosophy is to make life simple, and I didn&#8217;t want anyone to manually create files and do all <em>that</em> tedious work, Mandy has a trick up her over-size sleeves.</p>
+
+<p>In some programming languages, you can pull in third-party libraries from GitHub. Mandy takes a similar approach. Instead of using some central service for storing themes and sites other people have made, Mandy allows you to scaffold a new Mandy site directly from GitHub. Here&#8217;s a small example:</p>
+
+<pre><code class="language-bash">mandy -i mysite -w angeldollface/mandy-template-site
+# OR
+mandy --init mysite --wtmpl angeldollface/mandy-template-site
+# OR
+mandy init mysite wtmpl angeldollface/mandy-template-site</code></pre>
+
+<p>In this example we scaffold a new site using the default theme I have made from the repository <code>angeldollface/mandy-template-site</code>. We scaffold this new site in the directory <code>mysite</code>. Pretty, rad, huh?</p>
+
+   </div>
+  </div>
+
+  <!--Footer section.-->
+  <div class="footer">
+   <p class="footer">
+    Copyright 2023 Alexander Abraham, a.k.a. Angel Dollface
+   </p>
+  </div>
+
+  <!--Script section.-->
+  <script async src="/mandys-houseassets/javascript/nav.js"></script>
+
+ </body>
+</html>

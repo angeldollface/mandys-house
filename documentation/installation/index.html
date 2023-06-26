@@ -1,0 +1,156 @@
+<!--
+MANDY'S HOUSE by Alexander Abraham a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+-->
+
+<!DOCTYPE html>
+<html>
+
+ <head>
+
+  <!--Header section.-->
+  <title>Installing Mandy</title>
+  <meta property="og:image:type" content="image/png">
+  <title>MANDY | Installing Mandy</title>
+  <meta name="twitter:image:type" content="image/png">
+  <meta property="og:image" content="/mandys-houseassets/banner/banner.png">
+  <meta property="twitter:image" content="/mandys-houseassets/banner/banner.png">
+  <meta property="og:name" content="MANDY">
+  <meta property="og:description" content="A hypersonic static-site generator written in Rust.">
+  <meta name="twitter:name" content="MANDY">
+  <meta name="keywords" content="static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="MANDY">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A hypersonic static-site generator written in Rust.">
+  <meta name="twitter:description" content="A hypersonic static-site generator written in Rust.">
+  <link rel="stylesheet" href="/mandys-housecss/index.css" type="text/css"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="/mandys-houseassets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/mandys-houseassets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/mandys-houseassets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/mandys-houseassets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/mandys-houseassets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/mandys-houseassets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/mandys-houseassets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/mandys-houseassets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/mandys-houseassets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/mandys-houseassets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/mandys-houseassets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/mandys-houseassets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/mandys-houseassets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/mandys-houseassets/icon_info/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/mandys-houseassets/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&display=swap" rel="stylesheet">
+ </head>
+
+ <body>
+
+  <!--Heading section.-->
+  <div class="header">
+   <h1 onclick="openNav('nav');">MENU</h1>
+  </div>
+
+  <!--Navigation section.-->
+  <div class="nav" id="nav">
+   <ul class="nav">
+    
+    <li class="nav"><a class="nav" href="/mandys-house">Home</a></li>
+    
+    <li class="nav"><a class="nav" href="/mandys-housecontent/about">About</a></li>
+    
+    <li class="nav"><a class="nav" href="/mandys-housecontent/documentation">Documentation</a></li>
+    
+    <li class="nav"><a class="nav" href="javascript:void(0);" onclick="closeNav('nav')">Close</a></li>
+   </ul>
+  </div>
+
+  <!--Fancy section.-->
+  <div class="landing">
+   <h1 class="landing">Installing Mandy</h1>
+   <p class="landing">Installing Mandy on your machine or server.</p>
+  </div>
+
+  <!--Content section.-->
+  <div class="main">
+   <div class="content">
+    <h2 id='installing_mandy'>INSTALLING MANDY</h2>
+
+<p>Installing Mandy is really quite simple! Since she is still under active development and I haven&#8217;t figured out how to package her for some of the most important platforms, you will have to install Mandy from GitHub. To do this you need to have the following things ready and available from the command line.</p>
+
+<ul>
+<li><a href='https://rust-lang.org'>Rust</a>: Mandy is written in Rust, so you will need the Rust compiler installed.</li>
+
+<li><a href='https://git-scm.org'>Git</a>: Since GitHub uses Git for version control, you will need that too.</li>
+</ul>
+
+<p>Once those things have been installed, run these commands from the command line:</p>
+
+<pre><code class="language-bash">cargo --version # Checking whether Cargo is installed.
+git --version # Checking whether Git is installed.
+cargo install --git https://github.com/angeldollface/mandy # This will install Mandy directly from source.</code></pre>
+
+<h2 id='updating'>UPDATING</h2>
+
+<p>To update Mandy, simply run the last command from above again.</p>
+
+<h2 id='planned_platforms'>PLANNED PLATFORMS</h2>
+
+<p>I will <em>try</em> to support these platforms in Mandy&#8217;s first release:</p>
+
+<h3 id='mac_osx'>Mac OSX</h3>
+
+<ul>
+<li>Mac OSX x86 64-bit</li>
+
+<li>Mac OSX x64 32-bit</li>
+
+<li>Mac OSX aarch64</li>
+</ul>
+
+<h3 id='windows'>Windows</h3>
+
+<ul>
+<li>Mac OSX x86 64-bit</li>
+
+<li>Mac OSX x64 32-bit</li>
+</ul>
+
+<h3 id='linux'>Linux</h3>
+
+<p>I&#8217;m not entirely sure yet but I want to support the following platforms:</p>
+
+<ul>
+<li>Arch Linux</li>
+
+<li>Debian</li>
+
+<li>Fedora</li>
+
+<li>Alpine Linux</li>
+
+<li>FreeBSD</li>
+
+<li>OpenBSD</li>
+
+<li>Termux</li>
+</ul>
+
+   </div>
+  </div>
+
+  <!--Footer section.-->
+  <div class="footer">
+   <p class="footer">
+    Copyright 2023 Alexander Abraham, a.k.a. Angel Dollface
+   </p>
+  </div>
+
+  <!--Script section.-->
+  <script async src="/mandys-houseassets/javascript/nav.js"></script>
+
+ </body>
+</html>

@@ -1,0 +1,118 @@
+<!--
+MANDY'S HOUSE by Alexander Abraham a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+-->
+
+<!DOCTYPE html>
+<html>
+
+ <head>
+
+  <!--Header section.-->
+  <title>How to use Markdown</title>
+  <meta property="og:image:type" content="image/png">
+  <title>MANDY | How to use Markdown</title>
+  <meta name="twitter:image:type" content="image/png">
+  <meta property="og:image" content="/mandys-houseassets/banner/banner.png">
+  <meta property="twitter:image" content="/mandys-houseassets/banner/banner.png">
+  <meta property="og:name" content="MANDY">
+  <meta property="og:description" content="A hypersonic static-site generator written in Rust.">
+  <meta name="twitter:name" content="MANDY">
+  <meta name="keywords" content="static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="MANDY">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A hypersonic static-site generator written in Rust.">
+  <meta name="twitter:description" content="A hypersonic static-site generator written in Rust.">
+  <link rel="stylesheet" href="/mandys-housecss/index.css" type="text/css"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="/mandys-houseassets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/mandys-houseassets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/mandys-houseassets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/mandys-houseassets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/mandys-houseassets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/mandys-houseassets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/mandys-houseassets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/mandys-houseassets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/mandys-houseassets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/mandys-houseassets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/mandys-houseassets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/mandys-houseassets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/mandys-houseassets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/mandys-houseassets/icon_info/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/mandys-houseassets/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&display=swap" rel="stylesheet">
+ </head>
+
+ <body>
+
+  <!--Heading section.-->
+  <div class="header">
+   <h1 onclick="openNav('nav');">MENU</h1>
+  </div>
+
+  <!--Navigation section.-->
+  <div class="nav" id="nav">
+   <ul class="nav">
+    
+    <li class="nav"><a class="nav" href="/mandys-house">Home</a></li>
+    
+    <li class="nav"><a class="nav" href="/mandys-housecontent/about">About</a></li>
+    
+    <li class="nav"><a class="nav" href="/mandys-housecontent/documentation">Documentation</a></li>
+    
+    <li class="nav"><a class="nav" href="javascript:void(0);" onclick="closeNav('nav')">Close</a></li>
+   </ul>
+  </div>
+
+  <!--Fancy section.-->
+  <div class="landing">
+   <h1 class="landing">How to use Markdown</h1>
+   <p class="landing">Using Markdown in your Mandy-powered site.</p>
+  </div>
+
+  <!--Content section.-->
+  <div class="main">
+   <div class="content">
+    <h2 id='using_markdown_for_content'>USING MARKDOWN FOR CONTENT</h2>
+
+<p>To make and edit content, Mandy uses Markdown. Markdown is a simple text format with some important info at the top of the file, called &quot;front matter&quot;. Mandy detects all Markdown files in a directory and builds a page from each Markdown file. Here&#8217;s an example:</p>
+
+<h2 id='`_markdown'><code>`</code>Markdown</h2>
+
+<p>layout: &quot;layouts/page.liquid&quot;</p>
+
+<h2 id='title:_"about_me"'>title: &quot;About Me&quot;</h2>
+
+<h2 id='your_content'>YOUR CONTENT</h2>
+
+<p>Your content goes here.</p>
+
+<pre><code>Mandy will look for the `layouts/page.liquid` file in the project root, render your content to HTML and insert this content into the Liquid template. Page variables saved in the front matter are called via the `{{ page.some_front_matter_var }}` expression in Liquid templates. Markdown files you want built, MUST have front matter and MUST end in `.markdown`. That&#8217;s it.
+
+## USING MARKDOWN FOR LOOPING OVER IN LIQUID TEMPLATES
+
+If you have a directory with Markdown files you would like to loop over in a Liquid template, this is very simple also. First, you must set the `hasLoopContent` flag in `config.json` to `&quot;true&quot;`. Second, you must specify in which directory Mandy should look inside for your iterative content. This is done via the `loopContentDirs` flag in your `config.json` file. The directories to loop over are specified in this format. `&quot;posts|some_dir|some_other_dir&quot;`. You can then loop over this content in a layout like this:</code></pre>
+
+<p>{% for post in loop_content[&quot;posts&quot;] %} &lt;!-- Your HTML code for rendering this content goes here. You can call item variables like this: post.title, post.date, etc. --&gt; {% endfor %} <code>`</code></p>
+
+<p>In this example we loop over all Markdown files in the <code>posts</code> directory and render variables like <code>title</code>, <code>date</code> etc. These variables have to be there in the Markdown file&#8217;s front matter.</p>
+
+   </div>
+  </div>
+
+  <!--Footer section.-->
+  <div class="footer">
+   <p class="footer">
+    Copyright 2023 Alexander Abraham, a.k.a. Angel Dollface
+   </p>
+  </div>
+
+  <!--Script section.-->
+  <script async src="/mandys-houseassets/javascript/nav.js"></script>
+
+ </body>
+</html>
