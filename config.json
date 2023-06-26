@@ -2,9 +2,13 @@
     "title": "MANDY",
     "description": "A hypersonic static-site generator written in Rust.",
     "prod_url": "/mandys-house",
-    "dev_url": "",
-    "logo_url": "https://avatars.githubusercontent.com/u/112771657?v=4",
+    "dev_url": "/",
+    "logo_url": "assets/logo/logo.svg",
     "motto": "Hypersonic static-site generation.",
     "copyAssets": "true",
-    "assetsDir": "assets"
+    "assetsDir": "assets",
+    "footerText": "Copyright 2023 Alexander Abraham, a.k.a. Angel Dollface",
+    "hasLoopContent": "false",
+    "closingText": "Close",
+    "menuText": "MENU"
 }
