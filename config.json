@@ -7,6 +7,7 @@
     "motto": "Hypersonic static-site generation.",
     "copyAssets": "true",
     "assetsDir": "assets",
+    "keywords":"static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license",
     "footerText": "Copyright 2023 Alexander Abraham, a.k.a. Angel Dollface",
     "hasLoopContent": "false",
     "closingText": "Close",
