@@ -2,6 +2,7 @@
     "title": "MANDY",
     "description": "A hypersonic static-site generator written in Rust.",
     "prod_url": "/mandys-house/",
+    "copyFiles": "true=>CNAME|robots.txt",
     "dev_url": "/",
     "logo_url": "assets/logo/logo.svg",
     "motto": "Hypersonic static-site generation.",
