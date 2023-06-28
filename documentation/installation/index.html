@@ -78,65 +78,27 @@ Licensed under the MIT license.
    <div class="content">
     <h2 id='installing_mandy'>INSTALLING MANDY</h2>
 
-<p>Installing Mandy is really quite simple! Since she is still under active development and I haven&#8217;t figured out how to package her for some of the most important platforms, you will have to install Mandy from GitHub. To do this you need to have the following things ready and available from the command line.</p>
+<p>Installing Mandy is simple! Run one of the commands below for your platform to download a script that will install Mandy.</p>
 
 <ul>
-<li><a href='https://rust-lang.org'>Rust</a>: Mandy is written in Rust, so you will need the Rust compiler installed.</li>
-
-<li><a href='https://git-scm.org'>Git</a>: Since GitHub uses Git for version control, you will need that too.</li>
+<li>Run this command in a Powershell session with administrator privileges if you are running on Windows 32-bit:</li>
 </ul>
 
-<p>Once those things have been installed, run these commands from the command line:</p>
-
-<pre><code class="language-bash">cargo --version # Checking whether Cargo is installed.
-git --version # Checking whether Git is installed.
-cargo install --git https://github.com/angeldollface/mandy # This will install Mandy directly from source.</code></pre>
-
-<h2 id='updating'>UPDATING</h2>
-
-<p>To update Mandy, simply run the last command from above again.</p>
-
-<h2 id='planned_platforms'>PLANNED PLATFORMS</h2>
-
-<p>I will <em>try</em> to support these platforms in Mandy&#8217;s first release:</p>
-
-<h3 id='mac_osx'>Mac OSX</h3>
+<pre><code class="language-Powershell">. { iwr -useb https://angeldollface.art/mandys-house/installers/win_32.ps1 } | iex; ./win_32.ps1</code></pre>
 
 <ul>
-<li>Mac OSX x86 64-bit</li>
-
-<li>Mac OSX x64 32-bit</li>
-
-<li>Mac OSX aarch64</li>
+<li>Run this command in a Powershell session with administrator privileges if you are running on Windows 64-bit:</li>
 </ul>
 
-<h3 id='windows'>Windows</h3>
+<pre><code class="language-Powershell">. { iwr -useb https://angeldollface.art/mandys-house/installers/win_64.ps1 } | iex; ./win_64.ps1</code></pre>
 
-<ul>
-<li>Mac OSX x86 64-bit</li>
+<p>For non-Windows platforms, run this command. You may have to put <code>sudo</code> in front of this command:</p>
 
-<li>Mac OSX x64 32-bit</li>
-</ul>
+<pre><code class="language-bash">curl -s https://angeldollface.art/mandys-house/installers/nix.sh | bash -s</code></pre>
 
-<h3 id='linux'>Linux</h3>
+<h2 id='updating_mandy'>UPDATING MANDY</h2>
 
-<p>I&#8217;m not entirely sure yet but I want to support the following platforms:</p>
-
-<ul>
-<li>Arch Linux</li>
-
-<li>Debian</li>
-
-<li>Fedora</li>
-
-<li>Alpine Linux</li>
-
-<li>FreeBSD</li>
-
-<li>OpenBSD</li>
-
-<li>Termux</li>
-</ul>
+<p>If you want to update Mandy, simply run the command for your platform again.</p>
 
    </div>
   </div>

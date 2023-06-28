@@ -78,27 +78,22 @@ Licensed under the MIT license.
    <div class="content">
     <h2 id='using_markdown_for_content'>USING MARKDOWN FOR CONTENT</h2>
 
-<p>To make and edit content, Mandy uses Markdown. Markdown is a simple text format with some important info at the top of the file, called &quot;front matter&quot;. Mandy detects all Markdown files in a directory and builds a page from each Markdown file. Here&#8217;s an example:</p>
+<p>To make and edit content, Mandy uses Markdown. Markdown is a simple text format with some important info at the top of the file, called &quot;front matter&quot;. Mandy detects all Markdown files in a directory and builds a page from each Markdown file.</p>
 
-<h2 id='`_markdown'><code>`</code>Markdown</h2>
+<p>Mandy will look for the layout file you provide in a Markdown file&#8217;s front matter through the <code>layout</code> flag in the project root, render your content to HTML and insert this content into the Liquid template. Page variables saved in the front matter are called via the <code>{{ page.some_front_matter_var }}</code> expression in Liquid templates. Markdown files you want built, MUST have front matter and MUST end in <code>.markdown</code>. That&#8217;s it.</p>
 
-<p>layout: &quot;layouts/page.liquid&quot;</p>
+<h2 id='using_markdown_for_looping_over_in_liquid_templates'>USING MARKDOWN FOR LOOPING OVER IN LIQUID TEMPLATES</h2>
 
-<h2 id='title:_"about_me"'>title: &quot;About Me&quot;</h2>
+<p>If you have a directory with Markdown files you would like to loop over in a Liquid template, this is very simple also. First, you must set the <code>hasLoopContent</code> flag in <code>config.json</code> to <code>&quot;true&quot;</code>. Second, you must specify in which directory Mandy should look inside for your iterative content. This is done via the <code>loopContentDirs</code> flag in your <code>config.json</code> file. The directories to loop over are specified in this format. <code>&quot;posts|some_dir|some_other_dir&quot;</code>. You can then loop over this content in a layout like this:</p>
 
-<h2 id='your_content'>YOUR CONTENT</h2>
+<pre><code class="language-Liquid">{% for post in loop_content[&quot;posts&quot;] %}
+ &lt;!--
+  Your HTML code for rendering this content goes here.
+  You can call item variables like this: post.title, post.date, etc.
+ --&gt;
+{% endfor %}</code></pre>
 
-<p>Your content goes here.</p>
-
-<pre><code>Mandy will look for the `layouts/page.liquid` file in the project root, render your content to HTML and insert this content into the Liquid template. Page variables saved in the front matter are called via the `{{ page.some_front_matter_var }}` expression in Liquid templates. Markdown files you want built, MUST have front matter and MUST end in `.markdown`. That&#8217;s it.
-
-## USING MARKDOWN FOR LOOPING OVER IN LIQUID TEMPLATES
-
-If you have a directory with Markdown files you would like to loop over in a Liquid template, this is very simple also. First, you must set the `hasLoopContent` flag in `config.json` to `&quot;true&quot;`. Second, you must specify in which directory Mandy should look inside for your iterative content. This is done via the `loopContentDirs` flag in your `config.json` file. The directories to loop over are specified in this format. `&quot;posts|some_dir|some_other_dir&quot;`. You can then loop over this content in a layout like this:</code></pre>
-
-<p>{% for post in loop_content[&quot;posts&quot;] %} &lt;!-- Your HTML code for rendering this content goes here. You can call item variables like this: post.title, post.date, etc. --&gt; {% endfor %} <code>`</code></p>
-
-<p>In this example we loop over all Markdown files in the <code>posts</code> directory and render variables like <code>title</code>, <code>date</code> etc. These variables have to be there in the Markdown file&#8217;s front matter.</p>
+<p>In this example we loop over all Markdown files in the <code>posts</code> directory and render variables like <code>title</code>, <code>date</code> etc. These variables have to be set in the Markdown file&#8217;s front matter.</p>
 
    </div>
   </div>
