@@ -12,4 +12,4 @@ else {
 }
 
 # Install Mandy.
-cargo install --git https://github.com/angeldollface/mandy
+cargo install --git https://github.com/angeldollface/mandy --force
