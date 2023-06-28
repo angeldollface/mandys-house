@@ -6,7 +6,7 @@
 
 ## ABOUT :books:
 
-This repository contains the source code for the official website of the [Mandy project](https://github.com/angeldollface/mandys-house). Enjoy. :heart_on_fire:
+This repository contains the source code for the official website of the [Mandy project](https://github.com/angeldollface/mandy). Enjoy. :heart_on_fire:
 
 ## FEATURES :test_tube:
 
