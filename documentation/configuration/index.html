@@ -85,16 +85,14 @@ Licensed under the MIT license.
 
 <li><code>prod_url</code>: What <code>baseurl</code> to use for a production environment.</li>
 
-<li><code>copyAssets</code>: This can either be <code>&quot;true&quot;</code> or <code>&quot;false&quot;</code>. This tells Mandy whether you have static assets or not that need to copied at compile time or not.</li>
-
-<li><code>assetsDir</code>: This setting is only needed if <code>copyAssets</code> is set to <code>&quot;true&quot;</code>. This flag specifies which directory with static assets to copy.</li>
+<li><code>copyFiles</code>: This tells Mandy which files you would like to copy to your compiled site. The syntax is as follows: <code>true=&gt;file1|file2|file3</code>. If, instead of <code>true</code>, you have <code>false</code>, no files will be copied over.</li>
 
 <li><code>hasLoopContent</code>: This can either be <code>&quot;true&quot;</code> or <code>&quot;false&quot;</code>. This tells Mandy whether there are directories with content you would like to loop over in templates or not.</li>
 
 <li><code>loopContentDirs</code>: This setting is only needed if <code>hasLoopContent</code> is set to <code>&quot;true&quot;</code>. you can specify the directories to register for looping over like this: <code>&quot;posts|another_dir|yet_another_dir&quot;</code>.</li>
 </ul>
 
-<p>Any other flags are not neccessary but may be needed to render data in templates. All flags set in <code>config.json</code> can be called with <code>{{ site.some_flag }}</code> in Liquid templates.</p>
+<p>Any other flags are not neccessary but may be needed to render data in templates. All flags set in <code>config.json</code> with the exception of the previous four can be called with <code>{{ site.some_flag }}</code> in Liquid templates.</p>
 
    </div>
   </div>
