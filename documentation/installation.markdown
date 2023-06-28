@@ -6,46 +6,26 @@ description: "Installing Mandy on your machine or server."
 
 ## INSTALLING MANDY
 
-Installing Mandy is really quite simple! Since she is still under active development and I haven't figured out how to package her for some of the most important platforms, you will have to install Mandy from GitHub. To do this you need to have the following things ready and available from the command line.
+Installing Mandy is simple! Run one of the commands below for your platform to download a script that will install Mandy.
 
-- [Rust](https://rust-lang.org): Mandy is written in Rust, so you will need the Rust compiler installed.
-- [Git](https://git-scm.org): Since GitHub uses Git for version control, you will need that too.
+- Run this command in a Powershell session with administrator privileges if you are running on Windows 32-bit:
 
-Once those things have been installed, run these commands from the command line:
-
-```bash
-cargo --version # Checking whether Cargo is installed.
-git --version # Checking whether Git is installed.
-cargo install --git https://github.com/angeldollface/mandy # This will install Mandy directly from source.
+```Powershell
+. { iwr -useb https://angeldollface.art/mandys-house/installers/win_32.ps1 } | iex; ./win_32.ps1
 ```
 
-## UPDATING
+- Run this command in a Powershell session with administrator privileges if you are running on Windows 64-bit:
 
-To update Mandy, simply run the last command from above again.
+```Powershell
+. { iwr -useb https://angeldollface.art/mandys-house/installers/win_64.ps1 } | iex; ./win_64.ps1
+```
 
-## PLANNED PLATFORMS
+For non-Windows platforms, run this command. You may have to put `sudo` in front of this command:
 
-I will *try* to support these platforms in Mandy's first release:
+```bash
+curl -s https://angeldollface.art/mandys-house/installers/nix.sh | bash -s
+```
 
-### Mac OSX
+## UPDATING MANDY
 
-- Mac OSX x86 64-bit
-- Mac OSX x64 32-bit
-- Mac OSX aarch64
-
-### Windows
-
-- Mac OSX x86 64-bit
-- Mac OSX x64 32-bit
-
-### Linux
-
-I'm not entirely sure yet but I want to support the following platforms:
-
-- Arch Linux
-- Debian
-- Fedora
-- Alpine Linux
-- FreeBSD
-- OpenBSD
-- Termux
+If you want to update Mandy, simply run the command for your platform again.

@@ -6,13 +6,13 @@ description: "An overview of what you need to know to use Mandy."
 
 ## DOCUMENTATION
 
-- [Installation](../../documentation/installation)
-- [Scaffolding](../../documentation/scaffolding)
-- [Markdown](../../documentation/markdown)
-- [Static assets](../../documentation/static-assets)
-- [Configuration](../../documentation/configuration)
-- [Compilation](../../documentation/compilation)
-- [Handling Data](../../documentation/data)
-- [Making Layouts](../../documentation/layouts)
-- [Styling](../../documentation/styling)
-- [Contributing](../../documentation/contributing)
+- [INSTALLATION](../../documentation/installation)
+- [SCAFFOLDING](../../documentation/scaffolding)
+- [MARKDOWN](../../documentation/markdown)
+- [STATIC ASSETS](../../documentation/static-assets)
+- [PROJECT CONFIGURATION](../../documentation/configuration)
+- [PROJECT COMPILATION](../../documentation/compilation)
+- [HANDLING DATA](../../documentation/data)
+- [MAKING LAYOUTS](../../documentation/layouts)
+- [STYLING](../../documentation/styling)
+- [CONTRIBUTING](../../documentation/contributing)

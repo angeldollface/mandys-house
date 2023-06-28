@@ -7,20 +7,8 @@ description: "Using Markdown in your Mandy-powered site."
 ## USING MARKDOWN FOR CONTENT
 
 To make and edit content, Mandy uses Markdown. Markdown is a simple text format with some important info at the top of the file, called "front matter". Mandy detects all Markdown files in a directory and builds a page from each Markdown file.
-Here's an example:
 
-```Markdown
----
-layout: "layouts/page.liquid"
-title: "About Me"
----
-
-## YOUR CONTENT
-
-Your content goes here.
-```
-
-Mandy will look for the `layouts/page.liquid` file in the project root, render your content to HTML and insert this content into the Liquid template. Page variables saved in the front matter are called via the `{{ page.some_front_matter_var }}` expression in Liquid templates. Markdown files you want built, MUST have front matter and MUST end in `.markdown`. That's it.
+Mandy will look for the layout file you provide in a Markdown file's front matter through the `layout` flag in the project root, render your content to HTML and insert this content into the Liquid template. Page variables saved in the front matter are called via the `{{ page.some_front_matter_var }}` expression in Liquid templates. Markdown files you want built, MUST have front matter and MUST end in `.markdown`. That's it.
 
 ## USING MARKDOWN FOR LOOPING OVER IN LIQUID TEMPLATES
 
@@ -35,4 +23,4 @@ If you have a directory with Markdown files you would like to loop over in a Liq
 {% endfor %}
 ```
 
-In this example we loop over all Markdown files in the `posts` directory and render variables like `title`, `date` etc. These variables have to be there in the Markdown file's front matter.
+In this example we loop over all Markdown files in the `posts` directory and render variables like `title`, `date` etc. These variables have to be set in the Markdown file's front matter.
