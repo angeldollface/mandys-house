@@ -6,7 +6,7 @@ description: "Scaffolding a new Mandy-powered site."
 
 ## SCAFFOLDING A NEW MANDY-POWERED SITE
 
-Since Mandy's core philosophy is to make life simple, and I didn't want anyone to manually create files and do all *that* tedious work, Mandy has a trick up her over-size sleeves.
+Since Mandy's core philosophy is to make life simple, and I didn't want anyone to manually create files and do all *that* tedious work, Mandy has a trick up her over-sized sleeves.
 
 In some programming languages, you can pull in third-party libraries from GitHub. Mandy takes a similar approach. Instead of using some central service for storing themes and sites other people have made, Mandy allows you to scaffold a new Mandy site directly from GitHub. Here's a small example:
 

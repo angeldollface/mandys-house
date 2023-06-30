@@ -13,10 +13,6 @@ Licensed under the MIT license.
     div.content {
         width: 90%;
     }
-    p.footer {
-        font-size: 22px;
-        padding: 10px;
-    }
     h2 {
         font-size: 28px;
         padding-top: 10px;
@@ -76,5 +72,11 @@ Licensed under the MIT license.
         width: 90%;
         margin-top: 10px !important;
         margin-bottom: 10px !important;
+    }
+    img {
+        padding-top: 10px;
+    }
+    div.spacer {
+        height: 20px;
     }
 }

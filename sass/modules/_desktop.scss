@@ -44,27 +44,6 @@ div.content {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
-div.footer {
-    width: 100%;
-    background-color: $accentColor;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-p.footer {
-    font-size: 24px;
-    color: $mainColor;
-    font-family: $stdFont;
-    text-align: center;
-    font-weight: 100;
-    margin: 0px;
-    padding: 20px;
-}
 h2 {
     font-size: 30px;
     color: $accentColor;
@@ -265,4 +244,25 @@ a.nav {
 a.nav:hover {
     color: $shadowColor;
     font-style: italic;
+}
+img {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0px;
+}
+div.spacer {
+    width: 100%;
+    background-color: transparent;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
 }

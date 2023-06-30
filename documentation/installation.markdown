@@ -8,13 +8,13 @@ description: "Installing Mandy on your machine or server."
 
 Installing Mandy is simple! Run one of the commands below for your platform to download a script that will install Mandy.
 
-- Run this command in a Powershell session with administrator privileges if you are running on Windows 32-bit:
+- Run this command in a Powershell session with administrator privileges if you are running on a Windows 32-bit system:
 
 ```Powershell
 . { iwr -useb https://angeldollface.art/mandys-house/installers/win_32.ps1 } | iex; ./win_32.ps1
 ```
 
-- Run this command in a Powershell session with administrator privileges if you are running on Windows 64-bit:
+- Run this command in a Powershell session with administrator privileges if you are running on a Windows 64-bit system:
 
 ```Powershell
 . { iwr -useb https://angeldollface.art/mandys-house/installers/win_64.ps1 } | iex; ./win_64.ps1

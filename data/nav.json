@@ -10,5 +10,9 @@
     {
         "name": "Documentation",
         "url": "content/documentation"
+    },
+    {
+        "name": "Template Sites",
+        "url": "content/templates"
     }
 ]

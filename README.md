@@ -17,7 +17,7 @@ This repository contains the source code for the official website of the [Mandy 
 
 ## USAGE :hammer_and_pick:
 
-To use this site for your own Mandy-powered site, you need to have Mandy installed. To find out how to do that, head over to [this link](https://angeldollface.art/mandys-house/documentation/installation). You also need to have [Git](https://git-scm.org) installed. Once you have both installed, you can use this in the following way:
+To use this site for your own Mandy-powered site, you need to have Mandy installed. To find out how to do that, head over to [this link](https://angeldollface.art/mandys-house/documentation/installation). Once you have this installed, you can use this in the following way:
 
 - 1.) Check you have the latest version of Mandy installed:
 
@@ -25,10 +25,10 @@ To use this site for your own Mandy-powered site, you need to have Mandy install
 mandy -v
 ```
 
-- 2.) Clone this site's source:
+- 2.) Make a new Mandy site in the `mysite` directory:
 
 ```bash
-git clone https://github.com/angeldollface/mandys-house
+mandy -i mysite -w angeldollface/mandys-house
 ```
 
 - 3.) Change into your site's root directory:

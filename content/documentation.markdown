@@ -16,3 +16,5 @@ description: "An overview of what you need to know to use Mandy."
 - [MAKING LAYOUTS](../../documentation/layouts)
 - [STYLING](../../documentation/styling)
 - [CONTRIBUTING](../../documentation/contributing)
+- [ENVIRONMENT VARIABLES](../../documentation/env)
+- [DEPLOYMENT ON GITHUB PAGES](../../documentation/deployment)

@@ -1,6 +1,6 @@
 ---
 layout: "layouts/page.liquid"
-title: "Installing Mandy"
+title: "Using data files"
 description: "Using and rendering data in Mandy-powered sites."
 ---
 
@@ -39,4 +39,4 @@ You would call them in a Liquid template like this:
 {% endfor %}
 ```
 
-Note the use of the `["nav"]` option.
+Note the use of the `["nav"]` key.

@@ -4,6 +4,8 @@ title: "MANDY"
 description: "A hypersonic static-site generator written in Rust."
 ---
 
+![Mandy Showcase](https://github.com/angeldollface/mandy/raw/main/assets/showcase/showcase.gif)
+
 ## NO DEPENDENCIES, NO DRAMA!
 
 Mandy is written in Rust so it provides a single executable. You don't have to install anything except for Mandy herself.
