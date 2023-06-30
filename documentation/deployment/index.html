@@ -9,20 +9,20 @@ Licensed under the MIT license.
  <head>
 
   <!--Header section.-->
-  <title>Giving your websites some style</title>
+  <title>Deploying your site</title>
   <meta property="og:image:type" content="image/png">
   <meta name="twitter:image:type" content="image/png">
   <meta property="og:image" content="/mandys-house/assets/banner/banner.png">
   <meta property="twitter:image" content="/mandys-house/assets/banner/banner.png">
-  <meta property="og:name" content="Giving your websites some style">
-  <meta property="og:description" content="Styling your Mandy-powered sites.">
-  <meta name="twitter:name" content="Giving your websites some style">
+  <meta property="og:name" content="Deploying your site">
+  <meta property="og:description" content="Deploying your Mandy site on GitHub Pages.">
+  <meta name="twitter:name" content="Deploying your site">
   <meta name="keywords" content="static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image:alt" content="Giving your websites some style">
+  <meta name="twitter:image:alt" content="Deploying your site">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Styling your Mandy-powered sites.">
-  <meta name="twitter:description" content="Styling your Mandy-powered sites.">
+  <meta name="description" content="Deploying your Mandy site on GitHub Pages.">
+  <meta name="twitter:description" content="Deploying your Mandy site on GitHub Pages.">
   <link rel="stylesheet" href="/mandys-house/css/index.css" type="text/css"/>
   <link rel="apple-touch-icon" sizes="57x57" href="/mandys-house/assets/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/mandys-house/assets/favicons/apple-icon-60x60.png">
@@ -71,23 +71,47 @@ Licensed under the MIT license.
 
   <!--Fancy section.-->
   <div class="landing">
-   <h1 class="landing">Giving your websites some style</h1>
-   <p class="landing">Styling your Mandy-powered sites.</p>
+   <h1 class="landing">Deploying your site</h1>
+   <p class="landing">Deploying your Mandy site on GitHub Pages.</p>
   </div>
 
   <!--Content section.-->
   <div class="main">
     <div class="spacer"></div>
    <div class="content">
-    <h2 id='styling_your_mandy-powered_sites'>STYLING YOUR MANDY-POWERED SITES</h2>
+    <h2 id='deployment'>DEPLOYMENT</h2>
 
-<p>Mandy uses SASS (Syntactically-Awesome Stylesheets) as the language for making stylesheets to style your site with.</p>
+<p>Mandy has her own GitHub Action. GitHub Actions is a service by GitHub that enables you to test and/or deploy the code you have pushed to a GitHub repository. Setting up an action for Mandy to build and deploy your website is quite simple. For this, I&#8217;m assuming you have set up a Git repo in your Mandy-powered site and have created a repository for this site on the GitHub site itself. To use the GitHub Action, go to your repository&#8217;s settings, then go to &quot;Actions&quot; &gt; &quot;General&quot;, and enable &quot;Read and write permissions&quot; under the &quot;Workflow permissions&quot; setting. Save this.</p>
 
-<p>In terms of syntax and general usage of SASS itself, I recommend you read the <a href='https://sass-lang.com/documentation/'>SASS Documentation</a>.</p>
+<p>In your project folder, create a folder called <code>.github</code>. Inside this folder, create another folder called <code>workflows</code>. Inside <code>workflows</code>, create a file called <code>main.yml</code>. Put the following into <code>main.yml</code> and save the file:</p>
 
-<h2 id='file_structure'>FILE STRUCTURE</h2>
+<pre><code class="language-YML">on: [push]
+env:
+  MANDY_ENV: production
+name: Mandy CI
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: angeldollface/mandy-github-action@v.0.1
+      - name: &quot;Build the Mandy site&quot;
+        run: mandy -c .
+      - name: &quot;Deploy&quot;
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: dist</code></pre>
 
-<p>Mandy expects you to organize your SASS files in a very specific way. She expects you to have a single directory at the project root called <code>sass</code> with all your SASS files inside this directory.These files have to end in <code>.scss</code>. Mandy will look inside this directory and any sub-directory but not any deeper than that. She will then compile all your SASS files into a single file, called <code>index.css</code> in compressed form. This file will be placed in <code>dist/css</code>.</p>
+<p>After this is done, push your changes to GitHub. Wait for the build to complete. When the build is completed, go to your repository&#8217;s settings again. Once there, go to &quot;Pages&quot;. Change the branch from which your built Mandy the should be deployed to <code>gh-pages</code>. Save this setting. Once that is done, you should be able to access your Mandy site from <code>https://yourusername.github.io/repo-name</code>.</p>
+
+<h2 id='links'>LINKS</h2>
+
+<ul>
+<li>The link to the Mandy GitHub Action on GitHub Marketplace: <a href='https://github.com/marketplace/actions/mandy-site-build'>VIEW</a></li>
+
+<li>The link to the Mandy GitHub Action repository: <a href='https://github.com/angeldollface/mandy-github-action'>VIEW</a></li>
+</ul>
 
    </div>
    <div class="spacer"></div>

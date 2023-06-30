@@ -9,20 +9,20 @@ Licensed under the MIT license.
  <head>
 
   <!--Header section.-->
-  <title>Giving your websites some style</title>
+  <title>Environment variables</title>
   <meta property="og:image:type" content="image/png">
   <meta name="twitter:image:type" content="image/png">
   <meta property="og:image" content="/mandys-house/assets/banner/banner.png">
   <meta property="twitter:image" content="/mandys-house/assets/banner/banner.png">
-  <meta property="og:name" content="Giving your websites some style">
-  <meta property="og:description" content="Styling your Mandy-powered sites.">
-  <meta name="twitter:name" content="Giving your websites some style">
+  <meta property="og:name" content="Environment variables">
+  <meta property="og:description" content="Setting different variables for different environments.">
+  <meta name="twitter:name" content="Environment variables">
   <meta name="keywords" content="static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image:alt" content="Giving your websites some style">
+  <meta name="twitter:image:alt" content="Environment variables">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Styling your Mandy-powered sites.">
-  <meta name="twitter:description" content="Styling your Mandy-powered sites.">
+  <meta name="description" content="Setting different variables for different environments.">
+  <meta name="twitter:description" content="Setting different variables for different environments.">
   <link rel="stylesheet" href="/mandys-house/css/index.css" type="text/css"/>
   <link rel="apple-touch-icon" sizes="57x57" href="/mandys-house/assets/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/mandys-house/assets/favicons/apple-icon-60x60.png">
@@ -71,23 +71,17 @@ Licensed under the MIT license.
 
   <!--Fancy section.-->
   <div class="landing">
-   <h1 class="landing">Giving your websites some style</h1>
-   <p class="landing">Styling your Mandy-powered sites.</p>
+   <h1 class="landing">Environment variables</h1>
+   <p class="landing">Setting different variables for different environments.</p>
   </div>
 
   <!--Content section.-->
   <div class="main">
     <div class="spacer"></div>
    <div class="content">
-    <h2 id='styling_your_mandy-powered_sites'>STYLING YOUR MANDY-POWERED SITES</h2>
+    <h2 id='environment_variables'>ENVIRONMENT VARIABLES</h2>
 
-<p>Mandy uses SASS (Syntactically-Awesome Stylesheets) as the language for making stylesheets to style your site with.</p>
-
-<p>In terms of syntax and general usage of SASS itself, I recommend you read the <a href='https://sass-lang.com/documentation/'>SASS Documentation</a>.</p>
-
-<h2 id='file_structure'>FILE STRUCTURE</h2>
-
-<p>Mandy expects you to organize your SASS files in a very specific way. She expects you to have a single directory at the project root called <code>sass</code> with all your SASS files inside this directory.These files have to end in <code>.scss</code>. Mandy will look inside this directory and any sub-directory but not any deeper than that. She will then compile all your SASS files into a single file, called <code>index.css</code> in compressed form. This file will be placed in <code>dist/css</code>.</p>
+<p>Mandy does her best to keep things simple for end-users. For this reason, Mandy relies on an environment variable called <code>MANDY_ENV</code>. She needs this environment variable to determine which <code>baseurl</code> to use for different environments. If, for example, you&#8217;re hosting your Mandy site on GitHub in a repository called <code>yourusername/your-site</code>, the <code>baseurl</code> of <code>your-site</code> will not be <code>/</code> but <code>/your-site/</code>. However, because you shouldn&#8217;t have to change which <code>baseurl</code> to use each time you add something new, Mandy uses the <code>dev_url</code> flag from <code>config.json</code> each time you develop locally and the <code>prod_url</code> flag each time you deploy your project. Which one is used when is determined by the setting of the <code>MANDY_ENV</code> environment variable. This environment variable can either be set to <code>production</code> or <code>development</code>.</p>
 
    </div>
    <div class="spacer"></div>

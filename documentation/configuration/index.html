@@ -63,6 +63,8 @@ Licensed under the MIT license.
     
     <li class="nav"><a class="nav" href="/mandys-house/content/documentation">Documentation</a></li>
     
+    <li class="nav"><a class="nav" href="/mandys-house/content/templates">Template Sites</a></li>
+    
     <li class="nav"><a class="nav" href="javascript:void(0);" onclick="closeNav('nav')">Close</a></li>
    </ul>
   </div>
@@ -75,6 +77,7 @@ Licensed under the MIT license.
 
   <!--Content section.-->
   <div class="main">
+    <div class="spacer"></div>
    <div class="content">
     <h2 id='configuring_your_mandy-powered_site'>CONFIGURING YOUR MANDY-POWERED SITE</h2>
 
@@ -89,19 +92,13 @@ Licensed under the MIT license.
 
 <li><code>hasLoopContent</code>: This can either be <code>&quot;true&quot;</code> or <code>&quot;false&quot;</code>. This tells Mandy whether there are directories with content you would like to loop over in templates or not.</li>
 
-<li><code>loopContentDirs</code>: This setting is only needed if <code>hasLoopContent</code> is set to <code>&quot;true&quot;</code>. you can specify the directories to register for looping over like this: <code>&quot;posts|another_dir|yet_another_dir&quot;</code>.</li>
+<li><code>loopContentDirs</code>: This setting is only required if <code>hasLoopContent</code> is set to <code>&quot;true&quot;</code>. you can specify the directories to register for looping over like this: <code>&quot;posts|another_dir&quot;</code>.</li>
 </ul>
 
 <p>Any other flags are not neccessary but may be needed to render data in templates. All flags set in <code>config.json</code> with the exception of the previous four can be called with <code>{{ site.some_flag }}</code> in Liquid templates.</p>
 
    </div>
-  </div>
-
-  <!--Footer section.-->
-  <div class="footer">
-   <p class="footer">
-    Copyright 2023 Alexander Abraham, a.k.a. Angel Dollface
-   </p>
+   <div class="spacer"></div>
   </div>
 
   <!--Script section.-->

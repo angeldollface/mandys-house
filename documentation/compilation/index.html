@@ -63,6 +63,8 @@ Licensed under the MIT license.
     
     <li class="nav"><a class="nav" href="/mandys-house/content/documentation">Documentation</a></li>
     
+    <li class="nav"><a class="nav" href="/mandys-house/content/templates">Template Sites</a></li>
+    
     <li class="nav"><a class="nav" href="javascript:void(0);" onclick="closeNav('nav')">Close</a></li>
    </ul>
   </div>
@@ -75,14 +77,11 @@ Licensed under the MIT license.
 
   <!--Content section.-->
   <div class="main">
+    <div class="spacer"></div>
    <div class="content">
-    <h2 id='environment_variables'>ENVIRONMENT VARIABLES</h2>
+    <h2 id='generate_a_static_website'>GENERATE A STATIC WEBSITE</h2>
 
-<p>Mandy does her best to keep things simple for end-users. For this reason, Mandy relies on an environment variable called <code>MANDY_ENV</code>. She needs this environment variable to determine which <code>baseurl</code> to use for different assets in your site. If, for example, you&#8217;re hosting your Mandy site on GitHub in a repository called <code>yourusername/your-site</code>, the <code>baseurl</code> of <code>your-site</code> will not be <code>/</code> but <code>/your-site/</code>. However, because you shouldn&#8217;t have to change which <code>baseurl</code> to use each time you add something new, Mandy uses the <code>dev_url</code> flag from <code>config.json</code> each time you develop locally and the <code>prod_url</code> flag each time you deploy your project. Which one is used when is determined by the setting of <code>MANDY_ENV</code>. This environment variable can either be set to <code>production</code> or <code>development</code>.</p>
-
-<h2 id='generate_a_static_website'>GENERATE A STATIC WEBSITE</h2>
-
-<p>To compile your Mandy site, simply run the command from the command line:</p>
+<p>To compile your Mandy site, simply run this command from the command line:</p>
 
 <pre><code class="language-bash">mandy -c path_to_your_mandy_site
 # OR
@@ -94,7 +93,7 @@ mandy comps path_to_your_mandy_site</code></pre>
 
 <h2 id='test_a_site_locally'>TEST A SITE LOCALLY</h2>
 
-<p>Mandy allows to spin uo a local development server to test your Mandy site on your machine. Run the following commands in sequence to do so:</p>
+<p>Mandy allows you to spin uo a local development server to test your Mandy site on your machine. Run the following commands in sequence to do so:</p>
 
 <pre><code class="language-bash"># We must clean previous builds.
 mandy -r your_mandy_site_dir
@@ -110,48 +109,10 @@ mandy --srvs your_mandy_site_dir
 # OR
 mandy srvs your_mandy_site_dir</code></pre>
 
-<h2 id='deployment'>DEPLOYMENT</h2>
-
-<p>Mandy has her own GitHub Action. GitHub Actions is a service by GitHub that enables you to test and/or deploy the code you have pushed to a GitHub repository. Setting up an action for Mandy to build and deploy your website is quite simple. For this, I&#8217;m assuming you have set up a Git repo in your Mandy-powered site and have created a repository for this site on the GitHub site itself. To use the GitHub Action, go to your repository&#8217;s settings, then go to &quot;Actions&quot; &gt; &quot;General&quot;, and enable &quot;Read and write permissions&quot; under the &quot;Workflow permissions&quot; setting. Save this.</p>
-
-<p>In your project folder, create a file called <code>.github</code>. Inside this folder, create another folder called <code>workflows</code>. Inside <code>workflows</code>, create a file called <code>main.yml</code>. Put the following into <code>main.yml</code> and save the file:</p>
-
-<pre><code class="language-YML">on: [push]
-env:
-  MANDY_ENV: production
-name: Mandy CI
-jobs:
-  build_and_test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: angeldollface/mandy-github-action@v.0.1
-      - name: &quot;Build the Mandy site&quot;
-        run: mandy -c .
-      - name: &quot;Deploy&quot;
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
-        with:
-          branch: gh-pages
-          folder: dist</code></pre>
-
-<p>After this is done, push your changes to GitHub. Wait for the build to complete. When the build is completed, go to your repository&#8217;s settings again. Once there, go to &quot;Pages&quot;. Change the branch from which your built Mandy the should be deployed to <code>gh-pages</code>. Save this setting. Once that is done, you should be able to access your Mandy site from <code>https://yourusername.github.io/repo-name</code>.</p>
-
-<h2 id='links'>LINKS</h2>
-
-<ul>
-<li>The link to the Mandy GitHub Action on GitHub Marketplace: <a href='https://github.com/marketplace/actions/mandy-site-build'>VIEW</a></li>
-
-<li>The link to the Mandy GitHub Action repository: <a href='https://github.com/angeldollface/mandy-github-action'>VIEW</a></li>
-</ul>
+<p>These are all the options that exist to work with a Mandy-powered site. Take your pick!</p>
 
    </div>
-  </div>
-
-  <!--Footer section.-->
-  <div class="footer">
-   <p class="footer">
-    Copyright 2023 Alexander Abraham, a.k.a. Angel Dollface
-   </p>
+   <div class="spacer"></div>
   </div>
 
   <!--Script section.-->
