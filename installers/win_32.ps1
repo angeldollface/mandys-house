@@ -8,7 +8,7 @@ if(Get-Command cargo){
 }
 else {
     Invoke-WebRequest -URI https://win.rustup.rs/i686 -OutFile rustup.exe
-    ./rustup.exe
+    ./rustup.exe -y
 }
 
 # Install Mandy.
