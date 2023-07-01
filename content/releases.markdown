@@ -21,6 +21,6 @@ description: "Changelog info for Mandy versions."
 - Publish `coutils` and `cleasy` on crates.io.
 - Publish Mandy on crates.io.
 - Update template sites accordingly.
-- Add suport for `include x.liquid` in templates. ([Rust Liquid issue here]()).
+- Add suport for `include x.liquid` in templates. ([Rust Liquid issue here](https://github.com/cobalt-org/liquid-rust/issues/509)).
 - Add deployment support for Netlify.
 - Add deployment support for Deno Deploy.
