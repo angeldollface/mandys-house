@@ -14,5 +14,17 @@
     {
         "name": "Template Sites",
         "url": "content/templates"
+    },
+    {
+        "name": "Project Info",
+        "url": "content/project"
+    },
+    {
+        "name": "Credits",
+        "url": "content/credits"
+    },
+    {
+        "name": "Release Notes",
+        "url": "content/releases"
     }
 ]
