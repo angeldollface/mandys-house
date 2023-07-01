@@ -12,7 +12,12 @@ description: "Changelog info for Mandy versions."
 
 ## [W.I.P.] Version 0.2.0
 
-- Adding a `sitemap.xml`.
-- Adding `robots.txt`.
-- Adding an automatic content JSON API.
-
+- Add a `sitemap.xml` file.
+- Add a `robots.txt` file.
+- Add an automatic content JSON API.
+- Fix the `data` flag data structure for looping through site data.
+- Split Mandy up into crates. (Make workspace.)
+- Comment code more.
+- Publish `coutils` and `cleasy` on crates.io.
+- Publish Mandy on crates.io.
+- Update template sites accordingly.

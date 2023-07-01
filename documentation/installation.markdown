@@ -29,3 +29,7 @@ curl -s https://angeldollface.art/mandys-house/installers/nix.sh | bash -s
 ## UPDATING MANDY
 
 If you want to update Mandy, simply run the command for your platform again.
+
+## UNINSTALLING MANDY
+
+To uninstall Mandy, simply run `cargo uninstall mandy` from a terminal session.
