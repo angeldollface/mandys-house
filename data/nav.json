@@ -5,26 +5,26 @@
     },
     {
         "name": "About",
-        "url": "content/about"
+        "url": "/content/about"
     },
     {
         "name": "Documentation",
-        "url": "content/documentation"
+        "url": "/content/documentation"
     },
     {
         "name": "Template Sites",
-        "url": "content/templates"
+        "url": "/content/templates"
     },
     {
         "name": "Project Info",
-        "url": "content/project"
+        "url": "/content/project"
     },
     {
         "name": "Credits",
-        "url": "content/credits"
+        "url": "/content/credits"
     },
     {
         "name": "Release Notes",
-        "url": "content/releases"
+        "url": "/content/releases"
     }
 ]
