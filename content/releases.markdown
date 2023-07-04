@@ -13,6 +13,9 @@ description: "Changelog info for Mandy versions."
 ## [W.I.P.] Version 0.2.0
 
 - Add a `sitemap.xml` file - done.
+- Cleanup code for liquid templating.
+- Update GitHub Action versions to coincide with Mandy versions.
+- Figure out cross-compilation!!
 - Add a `robots.txt` file - done.
 - Add a build metadata file - done.
 - Fix the `data` flag data structure for looping through site data - done.
