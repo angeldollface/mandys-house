@@ -10,4 +10,4 @@ else
 fi
 
 # Install Mandy.
-cargo install --git https://github.com/angeldollface/mandy --force --tag v.0.1.0
+cargo install --git https://github.com/angeldollface/mandy --force --tag v.0.2.0

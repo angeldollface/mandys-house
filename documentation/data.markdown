@@ -32,7 +32,7 @@ This file describes a bunch of navigation links that will appear on your site if
 You would call them in a Liquid template like this:
 
 ```Liquid
-{% for item in data["data"]["nav"] %}
+{% for item in data["nav"] %}
  <li class="navigation">
   <a class="navigation" href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
  </li>

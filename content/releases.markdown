@@ -4,31 +4,35 @@ title: "Release Notes"
 description: "Changelog info for Mandy versions."
 ---
 
-## [LATEST] Version 0.1.0
+## COMPLETED RELEASES
+
+### [LATEST] Version 0.2.0
+
+- Added deployment support for Netlify.
+- Added deployment support for Deno Deploy.
+- Added automatic generation of `robots.txt`.
+- Added a link to this page in Mandy's `README`.
+- Added automatic generation of `sitemap.xml`.
+- Added automatic generation of a build metadata file.
+- Added support for using `include x.liquid` in templates.
+- Dramatically improved Mandy's error-handling capabilities.
+- Added two new configuration flags: `tlDomain` and `updateFreq`.
+- Fixed the way site developers loop through site data in templates.
+- Updated Mandy's GitHub Action versions to coincide with Mandy's versions.
+
+### Version 0.1.0
 
 - Initial release.
 - Upload to GitHub.
 - Finalizing of many features.
 
-## [W.I.P.] Version 0.2.0
-
-- Comment code more.
-- Update template sites accordingly.
-- Cleanup code for liquid templating.
-- Add a `sitemap.xml` file - done.
-- Add a `robots.txt` file - done.
-- Add a build metadata file - done.
-- Add a link to this page in Mandy's README.
-- Fix the `data` flag data structure for looping through site data - done.
-- Add suport for `include x.liquid` in templates. ([Rust Liquid issue here](https://github.com/cobalt-org/liquid-rust/issues/509)) - done.
+### FUTURE RELEASES
 
 ## [W.I.P] Version 0.3.0
 
+- Comment code more.
 - Publish Mandy on crates.io.
 - Figure out cross-compilation!!
-- Add deployment support for Netlify.
-- Add deployment support for Deno Deploy.
+- Cleanup code for Liquid templating.
 - Publish `coutils` and `cleasy` on crates.io.
-- Add Automatic API generation for each page.
 - Split Mandy up into crates. (Make workspace.)
-- Update GitHub Action versions to coincide with Mandy versions.

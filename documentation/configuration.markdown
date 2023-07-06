@@ -10,6 +10,8 @@ Every Mandy site needs to tell Mandy some info about your project. This info is 
 
 - `dev_url`: What `baseurl` to use for local development.
 - `prod_url`: What `baseurl` to use for a production environment.
+- `tlDomain`: Which top-level domain is your site being served and deployed from?
+- `updateFreq`: How often is your site being updated? Weekly? Monthly? If you're not sure, leave the default frequency in your site's `config.json`.
 - `copyFiles`: This tells Mandy which files you would like to copy to your compiled site. The syntax is as follows: 
 `true=>file1|file2|file3`. If, instead of `true`, you have `false`, no files will be copied over.
 - `hasLoopContent`: This can either be `"true"` or `"false"`. This tells Mandy whether there are directories with content you would like to loop over in templates or not.

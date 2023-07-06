@@ -18,4 +18,3 @@ description: "An overview of what you need to know to use Mandy."
 - [CONTRIBUTING](../../documentation/contributing)
 - [ENVIRONMENT VARIABLES](../../documentation/env)
 - [PROJECT ICONS](../../documentation/icons)
-- [DEPLOYMENT ON GITHUB PAGES](../../documentation/deployment)
