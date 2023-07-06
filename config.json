@@ -5,7 +5,7 @@
     "dev_url": "/",
     "logo_url": "assets/logo/logo.svg",
     "motto": "Hypersonic static-site generation.",
-    "copyFiles": "true=>assets|installers",
+    "copyFiles": "true=>assets|installers|helpers",
     "tlDomain": "https://angeldollface.art",
     "updateFreq": "weekly",
     "keywords":"static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license",
