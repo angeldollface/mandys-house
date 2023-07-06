@@ -20,3 +20,7 @@ export async function serveSite(path: string): Promise<void> {
         }
     }
 }
+
+// Exporting the most important
+// function.
+export default serveSite;
