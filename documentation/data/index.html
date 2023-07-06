@@ -46,7 +46,7 @@
   <div class="nav" id="nav">
  <ul class="nav">
  
-  <li class="nav"><a class="nav" href="/mandys-house">Home</a></li>
+  <li class="nav"><a class="nav" href="/mandys-house/">Home</a></li>
  
   <li class="nav"><a class="nav" href="/mandys-house/content/about">About</a></li>
  
@@ -97,7 +97,7 @@
 
 <p>You would call them in a Liquid template like this:</p>
 
-<pre><code class="language-Liquid">{% for item in data[&quot;data&quot;][&quot;nav&quot;] %}
+<pre><code class="language-Liquid">{% for item in data[&quot;nav&quot;] %}
  &lt;li class=&quot;navigation&quot;&gt;
   &lt;a class=&quot;navigation&quot; href=&quot;{{ site.baseurl }}{{ item.url }}&quot;&gt;{{ item.name }}&lt;/a&gt;
  &lt;/li&gt;

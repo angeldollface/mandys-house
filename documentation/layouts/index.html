@@ -46,7 +46,7 @@
   <div class="nav" id="nav">
  <ul class="nav">
  
-  <li class="nav"><a class="nav" href="/mandys-house">Home</a></li>
+  <li class="nav"><a class="nav" href="/mandys-house/">Home</a></li>
  
   <li class="nav"><a class="nav" href="/mandys-house/content/about">About</a></li>
  
@@ -77,6 +77,10 @@
 <p>Mandy uses Liquid as the templating language for making and rendering layouts for content in a Mandy-powered site.</p>
 
 <p>In Liquid you output content using two curly braces e.g. <code>{{ variable }}</code> and perform logic statements by surrounding them in a curly brace percentage sign e.g. <code>{% if statement %}</code>. To learn more about Liquid, check out the official <a href='https://shopify.github.io/liquid/'>Liquid Documentation</a>.</p>
+
+<h2 id='using_partials'>USING PARTIALS</h2>
+
+<p>Mandy now allows you to use partials with your Mandy projects. However, her way of loading and finding these partial Liquid templates is a little different. While you might do something like <code>{% include &#8217;some_partial.liquid&#8217; %}</code> in other static-site generators, Mandy expects you to keep your partials in the <code>partials</code> directory of your Mandy project root. She also expects you to call them likes this: <code>{% include &#8217;some_partial&#8217; %}</code> in Liquid layouts. If you fail to do either of these things, she will throw an error at you.</p>
 
    </div>
    <div class="spacer"></div>

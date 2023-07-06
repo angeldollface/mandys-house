@@ -46,7 +46,7 @@
   <div class="nav" id="nav">
  <ul class="nav">
  
-  <li class="nav"><a class="nav" href="/mandys-house">Home</a></li>
+  <li class="nav"><a class="nav" href="/mandys-house/">Home</a></li>
  
   <li class="nav"><a class="nav" href="/mandys-house/content/about">About</a></li>
  
@@ -72,7 +72,7 @@
   <div class="main">
    <div class="spacer"></div>
    <div class="content">
-    <h2 id='deployment'>DEPLOYMENT</h2>
+    <h2 id='deployment_on_github_pages'>DEPLOYMENT ON GITHUB PAGES</h2>
 
 <p>Mandy has her own GitHub Action. GitHub Actions is a service by GitHub that enables you to test and/or deploy the code you have pushed to a GitHub repository. Setting up an action for Mandy to build and deploy your website is quite simple. For this, I&#8217;m assuming you have set up a Git repo in your Mandy-powered site and have created a repository for this site on the GitHub site itself. To use the GitHub Action, go to your repository&#8217;s settings, then go to &quot;Actions&quot; &gt; &quot;General&quot;, and enable &quot;Read and write permissions&quot; under the &quot;Workflow permissions&quot; setting. Save this.</p>
 
@@ -97,6 +97,14 @@ jobs:
           folder: dist</code></pre>
 
 <p>After this is done, push your changes to GitHub. Wait for the build to complete. When the build is completed, go to your repository&#8217;s settings again. Once there, go to &quot;Pages&quot;. Change the branch from which your built Mandy the should be deployed to <code>gh-pages</code>. Save this setting. Once that is done, you should be able to access your Mandy site from <code>https://yourusername.github.io/repo-name</code>.</p>
+
+<h2 id='deployment_on_netlify'>DEPLOYMENT ON NETLIFY</h2>
+
+<p>Deploying Mandy sites from Netlify is simple. Mandy allows you to deploy the static sites she generates, on Netlify. You need to have an active Netlify account. It is best you sign up with GitHub. To set this up, go to your Netlify dashboard and create a new site. On this dashboard there will be a menu or page under &quot;Build and Deploy&quot;. Go to to this page. Link the repository that contains your Mandy project. Under &quot;Branches to Deploy&quot;, type &quot;gh-pages&quot;. Leave the &quot;Build configuration&quot; section clear. Please make sure your production &quot;baseurl&quot; is set to &quot;/&quot; or &quot;&quot;. That&#8217;s all there is to it.</p>
+
+<h2 id='deployment_on_deno_deploy'>DEPLOYMENT ON DENO DEPLOY</h2>
+
+<p>Deploying Mandy sites on Deno Deploy is as easy as it is with Netlify with the added advantage that Mandy generates the neccessary server files for you in the final <code>dist</code> directory. Go to the &quot;Deno Deploy&quot; website and link the repository that holds your Mandy project. Choose the branch that holds the built project files. That&#8217;s it! Please make sure your production &quot;baseurl&quot; is set to &quot;/&quot; or &quot;&quot;. Done!</p>
 
 <h2 id='links'>LINKS</h2>
 
