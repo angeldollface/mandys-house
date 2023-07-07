@@ -32,4 +32,4 @@ If you want to update Mandy, simply run the command for your platform again.
 
 ## UNINSTALLING MANDY
 
-To uninstall Mandy, simply run `cargo uninstall mandy` from a terminal session.
+To uninstall Mandy, simply run `cargo uninstall mandy`  and `rustup self uninstall` from a terminal session.
