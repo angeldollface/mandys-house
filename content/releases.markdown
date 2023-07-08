@@ -33,6 +33,7 @@ description: "Changelog info for Mandy versions."
 - Comment code more.
 - Publish Mandy on crates.io.
 - Figure out cross-compilation!!
-- Cleanup code for Liquid templating.
+- Make the `mandy` executable tiny.
+- Cleanup code for Liquid templating - completed.
 - Publish `coutils` and `cliply` on crates.io - completed.
 - Split Mandy up into crates. (Make workspace.)
