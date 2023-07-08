@@ -26,9 +26,9 @@ description: "Changelog info for Mandy versions."
 - Upload to GitHub.
 - Finalizing of many features.
 
-### FUTURE RELEASES
+## FUTURE RELEASES
 
-## [W.I.P] Version 0.3.0
+### [W.I.P] Version 0.3.0
 
 - Comment code more.
 - Publish Mandy on crates.io.
