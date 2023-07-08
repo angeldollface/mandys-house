@@ -34,5 +34,5 @@ description: "Changelog info for Mandy versions."
 - Publish Mandy on crates.io.
 - Figure out cross-compilation!!
 - Cleanup code for Liquid templating.
-- Publish `coutils` and `cleasy` on crates.io.
+- Publish `coutils` and `cliply` on crates.io - completed.
 - Split Mandy up into crates. (Make workspace.)
