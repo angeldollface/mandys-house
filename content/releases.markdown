@@ -35,6 +35,7 @@ description: "Changelog info for Mandy versions."
 - Figure out cross-compilation!!
 - Check and clean Mandy workspace.
 - Make the `mandy` executable tiny.
+- Write tests for workspace crates.
 - Cleanup code for Liquid templating - completed.
 - Publish `coutils` and `cliply` on crates.io - completed.
 - Split Mandy up into crates (Make workspace.) - completed.
