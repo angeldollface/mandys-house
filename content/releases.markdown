@@ -32,10 +32,10 @@ description: "Changelog info for Mandy versions."
 
 - Comment code more.
 - Publish Mandy on crates.io.
-- Figure out cross-compilation!!
 - Check and clean Mandy workspace.
-- Make the `mandy` executable tiny.
 - Write tests for workspace crates.
+- Figure out cross-compilation - completed.
+- Make the `mandy` executable tiny - completed.
 - Cleanup code for Liquid templating - completed.
 - Publish `coutils` and `cliply` on crates.io - completed.
 - Split Mandy up into crates (Make workspace.) - completed.
