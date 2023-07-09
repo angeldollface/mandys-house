@@ -36,4 +36,4 @@ description: "Changelog info for Mandy versions."
 - Make the `mandy` executable tiny.
 - Cleanup code for Liquid templating - completed.
 - Publish `coutils` and `cliply` on crates.io - completed.
-- Split Mandy up into crates. (Make workspace.)
+- Split Mandy up into crates (Make workspace.) - completed.
