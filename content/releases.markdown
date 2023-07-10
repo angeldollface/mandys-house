@@ -6,7 +6,17 @@ description: "Changelog info for Mandy versions."
 
 ## COMPLETED RELEASES
 
-### [LATEST] Version 0.2.0
+### [LATEST] Version 0.3.0
+
+- Optimized the binary size.
+- Binaries for 64-bit systems.
+- Cleaned code for problem areas.
+- Improved security of dependencies.
+- Performance and speed improvements.
+- Dramatically improved code quality.
+- Restructured the project into a workspace.
+
+### Version 0.2.0
 
 - Added deployment support for Netlify.
 - Added deployment support for Deno Deploy.
@@ -25,17 +35,3 @@ description: "Changelog info for Mandy versions."
 - Initial release.
 - Upload to GitHub.
 - Finalizing of many features.
-
-## FUTURE RELEASES
-
-### [W.I.P] Version 0.3.0
-
-- Comment code more.
-- Publish Mandy on crates.io.
-- Check and clean Mandy workspace.
-- Write tests for workspace crates.
-- Figure out cross-compilation - completed.
-- Make the `mandy` executable tiny - completed.
-- Cleanup code for Liquid templating - completed.
-- Publish `coutils` and `cliply` on crates.io - completed.
-- Split Mandy up into crates (Make workspace.) - completed.
