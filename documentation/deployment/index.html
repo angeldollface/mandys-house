@@ -87,7 +87,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: angeldollface/mandy-github-action@v.0.2.0
+      - uses: angeldollface/mandy-github-action@v.0.3.0
+      - name: &quot;Build the Mandy site&quot;
+        run: mandy -c .
+      - name: &quot;Deploy&quot;
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: dist</code></pre>
+
+<p>Optionally, you can also use the latest cutting-edge version of Mandy&#8217;s source code by pasting this code into your <code>main.yml</code> file:</p>
+
+<pre><code class="language-YML">on: [push]
+env:
+  MANDY_ENV: production
+name: Mandy CI
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: angeldollface/mandy-github-action@dev
       - name: &quot;Build the Mandy site&quot;
         run: mandy -c .
       - name: &quot;Deploy&quot;

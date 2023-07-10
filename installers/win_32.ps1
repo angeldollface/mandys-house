@@ -12,4 +12,4 @@ else {
 }
 
 # Install Mandy.
-cargo install --git https://github.com/angeldollface/mandy --force --tag v.0.2.0
+cargo install --git https://github.com/angeldollface/mandy mandy-bin --force --tag v.0.3.0

@@ -74,6 +74,12 @@
    <div class="content">
     <h2 id='installing_mandy'>INSTALLING MANDY</h2>
 
+<h2 id='install_mandy_directly_(for_64-bit_systems)'>INSTALL MANDY DIRECTLY (FOR 64-BIT SYSTEMS)</h2>
+
+<p>Mandy offers binaries for the following systems on a 64-bit architecture: Linux with GLibC, Windows, and Mac OSX. These binaries can be found <a href='https://github.com/angeldollface/mandy/releases'>here</a>. Download the binary for your platform and move this to a location on your hard drive that is on your system&#8217;s <code>$PATH</code>.</p>
+
+<h3 id='install_mandy_via_a_script_(for_non-64-bit_systems)'>INSTALL MANDY VIA A SCRIPT (FOR NON-64-BIT SYSTEMS)</h3>
+
 <p>Installing Mandy is simple! Run one of the commands below for your platform to download a script that will install Mandy.</p>
 
 <ul>
@@ -83,22 +89,26 @@
 <pre><code class="language-Powershell">iex ((New-Object System.Net.WebClient).DownloadString(&#8217;https://angeldollface.art/mandys-house/installers/win_32.ps1&#8217;))</code></pre>
 
 <ul>
-<li>Run this command in a Powershell session with administrator privileges if you are running on a Windows 64-bit system:</li>
+<li>Run this command in a Powershell session with administrator privileges if you are running on a Windows 64-bit system (In case the previous option for your 64-bit system does not work for some reason.):</li>
 </ul>
 
 <pre><code class="language-Powershell">iex ((New-Object System.Net.WebClient).DownloadString(&#8217;https://angeldollface.art/mandys-house/installers/win_64.ps1&#8217;))</code></pre>
 
-<p>For non-Windows platforms, run this command. You may have to put <code>sudo</code> in front of this command:</p>
+<p>For non-Windows platforms run this command. You may have to put <code>sudo</code> in front of this command:</p>
 
 <pre><code class="language-bash">curl -s https://angeldollface.art/mandys-house/installers/nix.sh | bash -s</code></pre>
 
 <h2 id='updating_mandy'>UPDATING MANDY</h2>
 
-<p>If you want to update Mandy, simply run the command for your platform again.</p>
+<p>If you want to update Mandy, simply run the command for your platform again or download the latest binary from Mandy&#8217;s releases.</p>
 
 <h2 id='uninstalling_mandy'>UNINSTALLING MANDY</h2>
 
-<p>To uninstall Mandy, simply run <code>cargo uninstall mandy</code>  and <code>rustup self uninstall</code> from a terminal session.</p>
+<p>To uninstall Mandy, simply run <code>cargo uninstall mandy</code>  and <code>rustup self uninstall</code> from a terminal session if you installed Mandy via a script. You can also delete the binary file if that is how you installed Mandy on your system.</p>
+
+<h2 id='troubleshooting'>TROUBLESHOOTING</h2>
+
+<p>If you encounter any problems, please file an issue <a href='https://github.com/angeldollface/mandy/issues'>here</a>.</p>
 
    </div>
    <div class="spacer"></div>
