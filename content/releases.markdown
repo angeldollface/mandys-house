@@ -35,3 +35,11 @@ description: "Changelog info for Mandy versions."
 - Initial release.
 - Upload to GitHub.
 - Finalizing of many features.
+
+## FUTURE RELEASES
+
+### [W.I.P.] Version 0.3.1
+
+- Speed up the GitHub Action.
+- Fix the Deno Deploy bug.
+- Fix broken documentation links in source files.
