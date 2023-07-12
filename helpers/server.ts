@@ -4,23 +4,21 @@ Alexander Abraham a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 */
 
-// Importing the standard Deno server module.
-import { serve } from "https://deno.land/std@0.91.0/http/server.ts";
+// Importing the "Application" class from the "abc" module.
+import { Application } from 'https://deno.land/x/abc@v1.0.2/mod.ts'
 
-// Importing the standard Deno file server module.
-import { serveFile } from 'https://deno.land/std@0.91.0/http/file_server.ts';
-
-// Serves a Mandy site.
-export async function serveSite(path: string): Promise<void> {
-    const server = serve({ port: 8000 });
-    for await (const req of server) {
-        if(req.url === '/') {
-            const response = await serveFile(req, path);
-            req.respond(response)
-        }
+// Defining the function to serve
+// a static Mandy site.
+export function serveSite(){
+  const app: Application = new Application()
+  app.static('/', '.').file('/', 'index.html').start(
+    {
+      port: 8000 
     }
+  );
 }
 
-// Exporting the most important
-// function.
+// Exporting the function
+// serve a site so we
+// can import it.
 export default serveSite;
