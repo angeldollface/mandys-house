@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
  <head>
- <title>Mandy's documentation</title>
+ <title>Mandy's API</title>
  <meta property="og:image:type" content="image/png">
  <meta name="twitter:image:type" content="image/png">
  <meta property="og:image" content="/mandys-house/assets/banner/banner.png">
  <meta property="twitter:image" content="/mandys-house/assets/banner/banner.png">
- <meta property="og:name" content="Mandy's documentation">
- <meta property="og:description" content="An overview of what you need to know to use Mandy.">
- <meta name="twitter:name" content="Mandy's documentation">
+ <meta property="og:name" content="Mandy's API">
+ <meta property="og:description" content="Functions and APIs that the Mandy Cargo workspace has.">
+ <meta name="twitter:name" content="Mandy's API">
  <meta name="keywords" content="static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license">
  <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:image:alt" content="Mandy's documentation">
+ <meta name="twitter:image:alt" content="Mandy's API">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="description" content="An overview of what you need to know to use Mandy.">
- <meta name="twitter:description" content="An overview of what you need to know to use Mandy.">
+ <meta name="description" content="Functions and APIs that the Mandy Cargo workspace has.">
+ <meta name="twitter:description" content="Functions and APIs that the Mandy Cargo workspace has.">
  <link rel="stylesheet" href="/mandys-house/css/index.css" type="text/css"/>
  <link rel="apple-touch-icon" sizes="57x57" href="/mandys-house/assets/favicons/apple-icon-57x57.png">
  <link rel="apple-touch-icon" sizes="60x60" href="/mandys-house/assets/favicons/apple-icon-60x60.png">
@@ -66,41 +66,25 @@
  </ul>
 </div>
   <div class="landing">
- <h1 class="landing">Mandy's documentation</h1>
- <p class="landing">An overview of what you need to know to use Mandy.</p>
+ <h1 class="landing">Mandy's API</h1>
+ <p class="landing">Functions and APIs that the Mandy Cargo workspace has.</p>
 </div>
   <div class="main">
    <div class="spacer"></div>
    <div class="content">
-    <h2 id='documentation'>DOCUMENTATION</h2>
+    <h2 id='mandy's_apis_and_functions'>Mandy&#8217;s APIs and functions</h2>
 
-<ul>
-<li><a href='../../documentation/installation'>INSTALLATION</a></li>
+<p>Mandy, as a Rust project, is split into what is called a &quot;Cargo Workspace&quot;. These Workspaces are a group of &quot;Cargo crates&quot;, i.e. packages for the Rust programming language that all have a similar or shared task. Since Mandy&#8217;s codebase was getting quite large and I lost the overview, I split Mandy&#8217;s code into these Cargo Workspaces.</p>
 
-<li><a href='../../documentation/scaffolding'>SCAFFOLDING</a></li>
+<p>Mandy&#8217;s Workspace has two big parts. The first is the crate for the binary containing Mandy&#8217;s CLI and calling relevant crates for executing Mandy&#8217;s tasks and the second is the &quot;components&quot; folder, that contains all crates that the binary crate relies on to make Mandy work. Each crate inside the &quot;components&quot; folder is named according to what it does and which part it plays in Mandy&#8217;s larger architecture. If you&#8217;d like to access any of the APIs withing this workspace, you can do so by calling any crate in your `Cargo.toml&#8217; like this:</p>
 
-<li><a href='../../documentation/markdown'>MARKDOWN</a></li>
+<pre><code class="language-TOML">crate_name = { git = &quot;https://github.com/angeldollface/mandy&quot;, tag = &quot;0.3.1&quot;, path = &quot;components/crate_name&quot; }</code></pre>
 
-<li><a href='../../documentation/static-assets'>STATIC ASSETS</a></li>
+<p>You can then import any of the crate&#8217;s APIs in your Rust code like this:</p>
 
-<li><a href='../../documentation/configuration'>PROJECT CONFIGURATION</a></li>
+<pre><code class="language-Rust">use crate_name::some_API_entity;</code></pre>
 
-<li><a href='../../documentation/compilation'>PROJECT COMPILATION</a></li>
-
-<li><a href='../../documentation/data'>HANDLING DATA</a></li>
-
-<li><a href='../../documentation/layouts'>MAKING LAYOUTS</a></li>
-
-<li><a href='../../documentation/styling'>STYLING</a></li>
-
-<li><a href='../../documentation/contributing'>CONTRIBUTING</a></li>
-
-<li><a href='../../documentation/env'>ENVIRONMENT VARIABLES</a></li>
-
-<li><a href='../../documentation/icons'>PROJECT ICONS</a></li>
-
-<li><a href='../../apis'>APIs</a></li>
-</ul>
+<p>If you&#8217;d like to read the source code, you can do so by simply diving into any of Mandy&#8217;s crates and reading the Rust code and any comments that may exist the component you are reading.</p>
 
    </div>
    <div class="spacer"></div>
