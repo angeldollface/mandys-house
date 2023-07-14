@@ -6,7 +6,12 @@ description: "Changelog info for Mandy versions."
 
 ## COMPLETED RELEASES
 
-### [LATEST] Version 0.3.0
+### [LATEST] Version 0.3.1
+
+- Fix the Deno Deploy bug.
+- Fix broken documentation links in source files.
+
+### Version 0.3.0
 
 - Optimized the binary size.
 - Binaries for 64-bit systems.
@@ -35,11 +40,3 @@ description: "Changelog info for Mandy versions."
 - Initial release.
 - Upload to GitHub.
 - Finalizing of many features.
-
-## FUTURE RELEASES
-
-### [W.I.P.] Version 0.3.1
-
-- Speed up the GitHub Action.
-- Fix the Deno Deploy bug.
-- Fix broken documentation links in source files.

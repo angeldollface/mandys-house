@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: angeldollface/mandy-github-action@v.0.3.0
+      - uses: angeldollface/mandy-github-action@v.0.3.1
       - name: "Build the Mandy site"
         run: mandy -c .
       - name: "Deploy"
@@ -57,11 +57,17 @@ After this is done, push your changes to GitHub. Wait for the build to complete.
 
 ## DEPLOYMENT ON NETLIFY
 
-Deploying Mandy sites from Netlify is simple. Mandy allows you to deploy the static sites she generates, on Netlify. You need to have an active Netlify account. It is best you sign up with GitHub. To set this up, go to your Netlify dashboard and create a new site. On this dashboard there will be a menu or page under "Build and Deploy". Go to to this page. Link the repository that contains your Mandy project. Under "Branches to Deploy", type "gh-pages". Leave the "Build configuration" section clear. Please make sure your production "baseurl" is set to "/" or "". That's all there is to it.
+Deploying Mandy sites from Netlify is simple. Follow these steps to do so. i) First, go to [netlify.app](https://netlify.app) and make an account and a team. ii) Then, go to "Sites" and click "Import from Git". iii) Click on "Deploy from GitHub". iv) In the search field, search up your repo and click on it. v) Select the "gh-pages" branch as the branch to deploy your site from. vi) Click on "Deploy your_repo", where "your_repo" is the name of your repository. vii) Enjoy.
+
+The repository [angeldollface/mandy-netlify](https://github.com/angeldollface/mandy-netlify) is an example template site for deploying your Mandy site to Netlify. Take note of the URL configurations of `prod_url`and `dev_url`. The example repository is deployed [here](https://relaxed-meerkat-4e759d.netlify.app/).
 
 ## DEPLOYMENT ON DENO DEPLOY
 
-Deploying Mandy sites on Deno Deploy is as easy as it is with Netlify with the added advantage that Mandy generates the neccessary server files for you in the final `dist` directory. Go to the "Deno Deploy" website and link the repository that holds your Mandy project. Choose the branch that holds the built project files. That's it! Please make sure your production "baseurl" is set to "/" or "". Done!
+Deploying Mandy sites on Deno Deploy is as easy as it is with Netlify with the added advantage that Mandy generates the neccessary server files for you in the final `dist` directory. Carry out these steps to deploy your site on Deno Deploy.
+
+i) Go to [deno.land/deploy](https://deno.land/deploy). ii) Click on "Sign Up". iii) Click on the free tier and click "Get Started". iv) Click on "New  Project". v) Click on "Select a repository under "Deploy an existing GitHub repository". vi) Under "Select User or Organization", click your GitHub username. vii) Under "Select Repository", search up your repository and click on it. viii) Under the branch, click "gh-pages". ix) Then, click on "No build step". x) Under the "Entry point", leave that as "server.ts". xi) Click on "Create & Deploy". xii) Enjoy!
+
+The repository [angeldollface/mandy-deno-deploy](https://github.com/angeldollface/mandy-deno-deploy) is an example template site for deploying your Mandy site to Deno Deploy. Take note of the URL configurations of `prod_url`and `dev_url`. The example repository is deployed [here](https://mandy-deno-deploy.deno.dev/).
 
 ## LINKS
 

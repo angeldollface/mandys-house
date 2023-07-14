@@ -20,7 +20,7 @@ If you're just interested in creating a basic site, there are template projects.
 
 ## DEPLOY LIKE A PRO
 
-Mandy leverages GitHub Actions by providing a GitHub Action that will have your site running and available to the entire internet in minutes!
+Mandy leverages GitHub Actions by providing a GitHub Action that will have your site running and available to the entire internet in minutes! Supported deployment services include Netlify, GitHub Pages, and Deno Deploy.
 
 ## USE THE TECHNOLOGIES YOU KNOW
 
