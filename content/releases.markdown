@@ -6,10 +6,16 @@ description: "Changelog info for Mandy versions."
 
 ## COMPLETED RELEASES
 
-### [LATEST] Version 0.3.1
+### [LATEST] Version 0.3.2
 
-- Fix the Deno Deploy bug.
-- Fix broken documentation links in source files.
+- Fixed the bug with Mandy's inbuilt server.
+- Added a template site for Deno Deploy.
+- Added a template site for Netlify.
+
+### Version 0.3.1
+
+- Fixed the Deno Deploy bug.
+- Fixed broken documentation links in source files.
 
 ### Version 0.3.0
 
