@@ -46,7 +46,8 @@ description: "Template Sites that currently exist for Mandy."
 
 ## MANDY NETLIFY TEMPLATE
 
-- GitHub repository: [Visit](https://github.com/angeldollface/mandy-netlify) - Description: A small site template optimized for deployment on Netlify.
+- GitHub repository: [Visit](https://github.com/angeldollface/mandy-netlify) 
 - Command: `mandy -i mysite -w angeldollface/mandy-netlify`.
+- Description: A small site template optimized for deployment on Netlify.
 - Creator: [Angel Dollface](https://github.com/angeldollface)
 - Support: [Get support here.](https://github.com/angeldollface/mandy-netlify/issues)
