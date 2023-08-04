@@ -46,3 +46,11 @@ description: "Changelog info for Mandy versions."
 - Initial release.
 - Upload to GitHub.
 - Finalizing of many features.
+
+## FUTURE RELEASES
+
+### [W.I.P.] Version 0.4.0
+
+- Add support for Tailwind CSS.
+- Add support for Doll Markup.
+- Distribution on Linux systems. (Optional)
