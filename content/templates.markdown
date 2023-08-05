@@ -51,3 +51,11 @@ description: "Template Sites that currently exist for Mandy."
 - Description: A small site template optimized for deployment on Netlify.
 - Creator: [Angel Dollface](https://github.com/angeldollface)
 - Support: [Get support here.](https://github.com/angeldollface/mandy-netlify/issues)
+
+## MANDY PORTFOLIO SITE
+
+- GitHub repository: [Visit](https://github.com/angeldollface/mandy-portfolio-site)
+- Command: `mandy -i mysite -w angeldollface/mandy-portfolio-site`.
+- Description: A beautiful image-rich Mandy template site for creating portfolio websites.
+- Creator: [Angel Dollface](https://github.com/angeldollface)
+- Support: [Get support here.](https://github.com/angeldollface/mandy-portfolio-site/issues)

@@ -11,7 +11,7 @@ Mandy, as a Rust project, is split into what is called a "Cargo Workspace". Thes
 Mandy's Workspace has two big parts. The first is the crate for the binary containing Mandy's CLI and calling relevant crates for executing Mandy's tasks and the second is the "components" folder, that contains all crates that the binary crate relies on to make Mandy work. Each crate inside the "components" folder is named according to what it does and which part it plays in Mandy's larger architecture. If you'd like to access any of the APIs withing this workspace, you can do so by calling any crate in your `Cargo.toml' like this:
 
 ```TOML
-crate_name = { git = "https://github.com/angeldollface/mandy", tag = "0.3.1", path = "components/crate_name" }
+crate_name = { git = "https://github.com/angeldollface/mandy", tag = "0.3.3", path = "components/crate_name" }
 ```
 
 You can then import any of the crate's APIs in your Rust code like this:

@@ -6,7 +6,14 @@ description: "Changelog info for Mandy versions."
 
 ## COMPLETED RELEASES
 
-### [LATEST] Version 0.3.2
+### [LATEST] Version 0.3.3
+
+- Fixed a bug with routing between pages.
+- Security updates.
+- Updated dependencies.
+- Added a template site that helps building a portfolio website.
+
+### Version 0.3.2
 
 - Fixed the bug with Mandy's inbuilt server.
 - Added a template site for Deno Deploy.
@@ -46,11 +53,3 @@ description: "Changelog info for Mandy versions."
 - Initial release.
 - Upload to GitHub.
 - Finalizing of many features.
-
-## FUTURE RELEASES
-
-### [W.I.P.] Version 0.4.0
-
-- Add support for Tailwind CSS.
-- Add support for Doll Markup.
-- Distribution on Linux systems. (Optional)

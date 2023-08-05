@@ -17,7 +17,7 @@ If you are interested in contributing, there are several things you can do:
 ## COMMUNITY
 
 Mandy's community is small for now but we're all very kind I guarantee you!
-Here's a link to the official [Mandy Discord Server](https://discord.gg/VR7eZFrf). Bring cookies!
+Here's a link to the official [Mandy Discord Server](https://discord.gg/PuEuAEk7BA). Bring cookies!
 
 ## CODE OF CONDUCT
 
