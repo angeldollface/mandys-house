@@ -53,3 +53,12 @@ description: "Changelog info for Mandy versions."
 - Initial release.
 - Upload to GitHub.
 - Finalizing of many features.
+
+## FUTURE RELEASES
+
+### Version 0.4.0
+
+- Add support for Doll Markup.
+- Add the automatic generation of an RSS feed.
+- Allow the usage of template sites through sub-paths.
+- Allow the usage of template sites through GitHub releases.
