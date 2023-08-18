@@ -20,14 +20,6 @@ description: "Template Sites that currently exist for Mandy."
 - Creator: [Angel Dollface](https://github.com/angeldollface)
 - Support: [Get support here.](https://github.com/angeldollface/mandys-house/issues)
 
-## MANDY THREE.JS SITE
-
-- GitHub repository: [Visit](https://github.com/angeldollface/mandy-threejs-site)
-- Command: `mandy -i mysite -w angeldollface/mandy-threejs-site`
-- Description: A single-page site template using three.js for the Mandy static-site generator.
-- Creator: [Angel Dollface](https://github.com/angeldollface)
-- Support: [Get support here.](https://github.com/angeldollface/mandy-threejs-site/issues)
-
 ## MANDY DARK MATERIAL
 
 - GitHub repository: [Visit](https://github.com/angeldollface/mandy-dark-material)
