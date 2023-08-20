@@ -8,15 +8,15 @@ description: "A hypersonic static-site generator written in Rust."
 
 ## NO DEPENDENCIES, NO DRAMA!
 
-Mandy is written in Rust so it provides a single executable. You don't have to install anything except for Mandy herself.
+Mandy provides a single executable. Download the binary for your system and you can start building!
 
 ## HYPERSONIC
 
-Mandy is written in Rust. Your site will be compiled in <0.5s.
+Your site will be compiled in <0.5s.
 
 ## EASY TO USE
 
-If you're just interested in creating a basic site, there are template projects. Modify the content as text and you're off to the races. No coding knowledge required!
+If you're just interested in creating a basic site, there are template sites. Modify the content as text and you can build and deploy your site. No coding required!
 
 ## DEPLOY LIKE A PRO
 
@@ -24,4 +24,4 @@ Mandy leverages GitHub Actions by providing a GitHub Action that will have your 
 
 ## USE THE TECHNOLOGIES YOU KNOW
 
-Mandy uses SASS, Liquid, and JSON for styling, templating, and data storage. Developing a theme has never been this simple!
+Mandy uses Sass, Liquid, and JSON for styling, templating, and data storage.

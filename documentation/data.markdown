@@ -4,9 +4,9 @@ title: "Using data files"
 description: "Using and rendering data in Mandy-powered sites."
 ---
 
-## GIVING MANDY DATA TO FEED ON
+## SETTING SITE DATA
 
-Since any site needs data that describes navigation items, social media links or other things, setting this up in a Mandy-powered site is quite simple. Simply create a directory in the project root called `data`. In this directory you can store JSON files that contain data. If, for example, you wanted to save some navigation links in this file, you could create a file called `nav.json` and put this in it:
+Since any site needs data that describes navigation items, social media links or other things, setting this up in a Mandy-powered site is quite simple. Create a directory in the project root called `data`. In this directory you can store JSON files that contain data. If, for example, you wanted to save some navigation links in this file, you could create a file called `nav.json` and put this in it:
 
 ```JSON
 [
@@ -39,4 +39,4 @@ You would call them in a Liquid template like this:
 {% endfor %}
 ```
 
-Note the use of the `["nav"]` key.
+Note the use of the `["nav"]` key. This key coincides with the name of the JSON data file. Support for other data storage formats is planned.

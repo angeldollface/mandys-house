@@ -12,7 +12,7 @@ Mandy offers binaries for the following systems on a 64-bit architecture: Linux 
 
 ### INSTALL MANDY VIA A SCRIPT (FOR NON-64-BIT SYSTEMS)
 
-Installing Mandy is simple! Run one of the commands below for your platform to download a script that will install Mandy.
+Run one of the commands below for your platform to download a script that will install Mandy.
 
 - Run this command in a Powershell session with administrator privileges if you are running on a Windows 32-bit system:
 
@@ -20,13 +20,13 @@ Installing Mandy is simple! Run one of the commands below for your platform to d
 iex ((New-Object System.Net.WebClient).DownloadString('https://angeldollface.art/mandys-house/installers/win_32.ps1'))
 ```
 
-- Run this command in a Powershell session with administrator privileges if you are running on a Windows 64-bit system (In case the previous option for your 64-bit system does not work for some reason.):
+- Run this command in a Powershell session with administrator privileges if you are running on a Windows 64-bit system:
 
 ```Powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://angeldollface.art/mandys-house/installers/win_64.ps1'))
 ```
 
-For non-Windows platforms run this command. You may have to put `sudo` in front of this command:
+For non-Windows platforms, run this command. You may have to put `sudo` in front of this command:
 
 ```bash
 curl -s https://angeldollface.art/mandys-house/installers/nix.sh | bash -s
@@ -34,11 +34,11 @@ curl -s https://angeldollface.art/mandys-house/installers/nix.sh | bash -s
 
 ## UPDATING MANDY
 
-If you want to update Mandy, simply run the command for your platform again or download the latest binary from Mandy's releases.
+If you want to update Mandy, run the command for your platform again or download the latest binary from Mandy's releases page on GitHub.
 
 ## UNINSTALLING MANDY
 
-To uninstall Mandy, simply run `cargo uninstall mandy`  and `rustup self uninstall` from a terminal session if you installed Mandy via a script. You can also delete the binary file if that is how you installed Mandy on your system.
+If you installed Mandy from a script, run `cargo uninstall mandy`  and `rustup self uninstall` from a terminal session to remove Mandy's binary from your system.
 
 ## TROUBLESHOOTING
 

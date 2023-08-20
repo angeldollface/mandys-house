@@ -53,13 +53,13 @@ jobs:
           folder: dist
 ```
 
-After this is done, push your changes to GitHub. Wait for the build to complete. When the build is completed, go to your repository's settings again. Once there, go to "Pages". Change the branch from which your built Mandy the should be deployed to `gh-pages`. Save this setting. Once that is done, you should be able to access your Mandy site from `https://yourusername.github.io/repo-name`.
+After this is done, push your changes to GitHub. Wait for the build to complete. When the build is completed, go to your repository's settings again. Once there, go to "Pages". Change the branch from which your built Mandy site should be deployed to `gh-pages`. Save this setting. Once that is done, you should be able to access your Mandy site from `https://yourusername.github.io/repo-name`. Note: If you are deploying your site from a repository other than `yourusername.github.io`, be sure to set the `prod_url` to `/repository-name`.
 
 ## DEPLOYMENT ON NETLIFY
 
-Deploying Mandy sites from Netlify is simple. Follow these steps to do so. i) First, go to [netlify.app](https://netlify.app) and make an account and a team. ii) Then, go to "Sites" and click "Import from Git". iii) Click on "Deploy from GitHub". iv) In the search field, search up your repo and click on it. v) Select the "gh-pages" branch as the branch to deploy your site from. vi) Click on "Deploy your_repo", where "your_repo" is the name of your repository. vii) Enjoy.
+To deploy Mandy sites from Netlify, follow these steps. i) First, go to [netlify.app](https://netlify.app) and make an account and a team. ii) Then, go to "Sites" and click "Import from Git". iii) Click on "Deploy from GitHub". iv) In the search field, search up your repo and click on it. v) Select the "gh-pages" branch as the branch to deploy your site from. vi) Click on "Deploy your_repo", where "your_repo" is the name of your repository. vii) Enjoy.
 
-The repository [angeldollface/mandy-netlify](https://github.com/angeldollface/mandy-netlify) is an example template site for deploying your Mandy site to Netlify. Take note of the URL configurations of `prod_url`and `dev_url`. The example repository is deployed [here](https://relaxed-meerkat-4e759d.netlify.app/).
+The repository [angeldollface/mandy-netlify](https://github.com/angeldollface/mandy-netlify) is an example template site for deploying your Mandy site on Netlify. Take note of the URL configurations of `prod_url`and `dev_url`. The example repository is deployed [here](https://relaxed-meerkat-4e759d.netlify.app/).
 
 ## DEPLOYMENT ON DENO DEPLOY
 

@@ -6,7 +6,7 @@ description: "Compiling a Mandy-powered site."
 
 ## GENERATE A STATIC WEBSITE
 
-To compile your Mandy site, simply run this command from the command line:
+To compile your Mandy site, run this command from the command line:
 
 ```bash
 mandy -c path_to_your_mandy_site
@@ -37,5 +37,3 @@ mandy --srvs your_mandy_site_dir
 # OR
 mandy srvs your_mandy_site_dir
 ```
-
-These are all the options that exist to work with a Mandy-powered site. Take your pick!

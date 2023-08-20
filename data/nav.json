@@ -4,10 +4,6 @@
         "url": "/"
     },
     {
-        "name": "About",
-        "url": "/content/about"
-    },
-    {
         "name": "Documentation",
         "url": "/content/documentation"
     },
