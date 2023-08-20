@@ -48,8 +48,6 @@
  
   <li class="nav"><a class="nav" href="/mandys-house/">Home</a></li>
  
-  <li class="nav"><a class="nav" href="/mandys-house/content/about">About</a></li>
- 
   <li class="nav"><a class="nav" href="/mandys-house/content/documentation">Documentation</a></li>
  
   <li class="nav"><a class="nav" href="/mandys-house/content/templates">Template Sites</a></li>
@@ -74,13 +72,13 @@
    <div class="content">
     <h2 id='using_markdown_for_content'>USING MARKDOWN FOR CONTENT</h2>
 
-<p>To make and edit content, Mandy uses Markdown. Markdown is a simple text format with some important info at the top of the file, called &quot;front matter&quot;. Mandy detects all Markdown files in a directory and builds a page from each Markdown file.</p>
+<p>To make and edit content, Mandy uses Markdown. Markdown is a simple text format with some important info at the top of the file, called &quot;front matter&quot;. Mandy detects all Markdown files in a directory and builds a page from each Markdown file that is found in a Mandy-powered site.</p>
 
 <p>Mandy will look for the layout file you provide in a Markdown file&#8217;s front matter through the <code>layout</code> flag in the project root, render your content to HTML, and insert this content into the Liquid template. Page variables saved in the front matter are called via the <code>{{ page.some_front_matter_var }}</code> expression in Liquid templates. Markdown files you want built, MUST have front matter and MUST end in <code>.markdown</code>.</p>
 
 <h2 id='using_markdown_for_looping_over_in_liquid_templates'>USING MARKDOWN FOR LOOPING OVER IN LIQUID TEMPLATES</h2>
 
-<p>If you have a directory with Markdown files you would like to loop over in a Liquid template, this is very simple also. First, you must set the <code>hasLoopContent</code> flag in <code>config.json</code> to <code>&quot;true&quot;</code>. Second, you must specify which directories Mandy should look inside for your iterative content. This is done via the <code>loopContentDirs</code> flag in your <code>config.json</code> file. The directories to loop over are specified in this format. <code>&quot;posts|some_dir&quot;</code>. You can then loop over this content in a layout like this:</p>
+<p>If you have a directory with Markdown files you would like to loop over in a Liquid template, you need to set some configuation flags in your site&#8217;s <code>config.json</code> file. First, you must set the <code>hasLoopContent</code> flag to <code>&quot;true&quot;</code>. Second, you must specify which directories Mandy should look inside for your iterative content. This is done via the <code>loopContentDirs</code> flag in your <code>config.json</code> file. The directories to loop over are specified in this format. <code>&quot;posts|some_dir&quot;</code>. You can then loop over this content in a layout like this:</p>
 
 <pre><code class="language-Liquid">{% for post in loop_content[&quot;posts&quot;] %}
  &lt;!--
