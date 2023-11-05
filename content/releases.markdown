@@ -64,3 +64,5 @@ description: "Changelog info for Mandy versions."
 - Add the automatic generation of an RSS feed.
 - Allow the usage of template sites through sub-paths.
 - Allow the usage of template sites through GitHub releases.
+- Add support for categories of content.
+- Add build logs with timestamps.
