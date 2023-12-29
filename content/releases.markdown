@@ -63,6 +63,7 @@ description: "Changelog info for Mandy versions."
 - Add support for TOML.
 - Add support for Doll Markup.
 - Add support for Lume's Vento templating engine.
+- Add unit tests for all sub-crates where possible.
 - Add the automatic generation of an RSS feed.
 - Allow the usage of template sites through sub-paths.
 - Add support for categories of content.
