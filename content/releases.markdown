@@ -60,7 +60,6 @@ description: "Changelog info for Mandy versions."
 
 - Add support for YAML.
 - Add support for TOML.
-- Add support for Doll Markup.
 - Add unit tests for all sub-crates where possible.
 - Add the automatic generation of an RSS feed.
 - Add support for categories of content.
