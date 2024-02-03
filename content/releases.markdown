@@ -56,11 +56,14 @@ description: "Changelog info for Mandy versions."
 
 ## FUTURE RELEASES
 
-### Version 0.4.0
+### Version 0.3.4
 
-- Add support for YAML.
-- Add support for TOML.
-- Add unit tests for all sub-crates where possible.
+- Add support for YAML - done.
+- Add support for TOML - done.
+- Add build logs with timestamps - done.
 - Add the automatic generation of an RSS feed.
 - Add support for categories of content.
-- Add build logs with timestamps - done.
+
+### Version 0.3.5
+
+- Add unit tests to sub-crates where possible.
