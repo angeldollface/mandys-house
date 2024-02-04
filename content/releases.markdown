@@ -6,7 +6,16 @@ description: "Changelog info for Mandy versions."
 
 ## COMPLETED RELEASES
 
-### [LATEST] Version 0.3.3
+### [LATEST] Version 0.3.4
+
+- Add support for YAML - done.
+- Add support for TOML - done.
+- Add build logs with timestamps - done.
+- Add the automatic generation of an RSS feed for iterative content - done.
+- Add the automatic generation of a JSON API for iterative content - done.
+- Add support for categories of content in iterative content - done.
+
+### Version 0.3.3
 
 - Fixed a bug with routing between pages.
 - Security updates.
@@ -55,15 +64,6 @@ description: "Changelog info for Mandy versions."
 - Finalizing of many features.
 
 ## FUTURE RELEASES
-
-### Version 0.3.4
-
-- Add support for YAML - done.
-- Add support for TOML - done.
-- Add build logs with timestamps - done.
-- Add the automatic generation of an RSS feed for iterative content - done.
-- Add the automatic generation of a JSON API for iterative content - done.
-- Add support for categories of content in iterative content - done.
 
 ### Version 0.3.5
 
