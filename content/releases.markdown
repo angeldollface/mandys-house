@@ -61,9 +61,13 @@ description: "Changelog info for Mandy versions."
 - Add support for YAML - done.
 - Add support for TOML - done.
 - Add build logs with timestamps - done.
-- Add the automatic generation of an RSS feed.
-- Add support for categories of content.
+- Add the automatic generation of an RSS feed for iterative content - done.
+- Add the automatic generation of a JSON API for iterative content - done.
+- Add support for categories of content in iterative content - done.
 
 ### Version 0.3.5
 
-- Add unit tests to sub-crates where possible.
+- Add Clippy linting.
+- Add unit tests in sub-crates where practical.
+- Overhaul website.
+- General housekeeping.
