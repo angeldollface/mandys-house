@@ -11,5 +11,6 @@
     "keywords":"static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license",
     "hasLoopContent": "false",
     "closingText": "Close",
-    "menuText": "MENU"
+    "menuText": "MENU",
+    "build_log": "true"
 }
