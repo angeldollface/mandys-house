@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Configuring a Mandy site</title>
+ <meta property="og:image:type" content="image/png">
+ <meta name="twitter:image:type" content="image/png">
+ <meta property="og:image" content="/mandys-house/assets/banner/banner.png">
+ <meta property="twitter:image" content="/mandys-house/assets/banner/banner.png">
+ <meta property="og:name" content="Configuring a Mandy site">
+ <meta property="og:description" content="How to configure your Mandy site.">
+ <meta name="twitter:name" content="Configuring a Mandy site">
+ <meta name="keywords" content="static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:image:alt" content="Configuring a Mandy site">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="How to configure your Mandy site.">
+ <meta name="twitter:description" content="How to configure your Mandy site.">
+ <link rel="stylesheet" href="/mandys-house/css/index.css" type="text/css"/>
+ <link rel="apple-touch-icon" sizes="57x57" href="/mandys-house/assets/favicons/apple-icon-57x57.png">
+ <link rel="apple-touch-icon" sizes="60x60" href="/mandys-house/assets/favicons/apple-icon-60x60.png">
+ <link rel="apple-touch-icon" sizes="72x72" href="/mandys-house/assets/favicons/apple-icon-72x72.png">
+ <link rel="apple-touch-icon" sizes="76x76" href="/mandys-house/assets/favicons/apple-icon-76x76.png">
+ <link rel="apple-touch-icon" sizes="114x114" href="/mandys-house/assets/favicons/apple-icon-114x114.png">
+ <link rel="apple-touch-icon" sizes="120x120" href="/mandys-house/assets/favicons/apple-icon-120x120.png">
+ <link rel="apple-touch-icon" sizes="144x144" href="/mandys-house/assets/favicons/apple-icon-144x144.png">
+ <link rel="apple-touch-icon" sizes="152x152" href="/mandys-house/assets/favicons/apple-icon-152x152.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="/mandys-house/assets/favicons/apple-icon-180x180.png">
+ <link rel="icon" type="image/png" sizes="192x192"  href="/mandys-house/assets/favicons/android-icon-192x192.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="/mandys-house/assets/favicons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="96x96" href="/mandys-house/assets/favicons/favicon-96x96.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/mandys-house/assets/favicons/favicon-16x16.png">
+ <link rel="manifest" href="/mandys-house/assets/icon_info/manifest.json">
+ <meta name="msapplication-TileColor" content="#ffffff">
+ <meta name="msapplication-TileImage" content="/mandys-house/assets/favicons/ms-icon-144x144.png">
+ <meta name="theme-color" content="#ffffff">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&display=swap" rel="stylesheet">
+</head>
+ <body>
+  <div class="header">
+ <h1 onclick="openNav('nav');">
+  MENU
+ </h1>
+</div>
+  <div class="nav" id="nav">
+ <ul class="nav">
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/">Home</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/documentation">Documentation</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/templates">Template Sites</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/project">Project Info</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/credits">Credits</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/releases">Release Notes</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/sponsoring">Sponsor Mandy</a></li>
+ 
+  <li class="nav"><a class="nav" href="javascript:void(0);" onclick="closeNav('nav')">Close</a></li>
+ </ul>
+</div>
+  <div class="landing">
+ <h1 class="landing">Configuring a Mandy site</h1>
+ <p class="landing">How to configure your Mandy site.</p>
+</div>
+  <div class="main">
+   <div class="spacer"></div>
+   <div class="content">
+    <h2 id='configuring_your_mandy-powered_site'>CONFIGURING YOUR MANDY-POWERED SITE</h2>
+
+<p>Every Mandy site needs to tell Mandy some info about your project. This info is controlled from <code>config.json</code>. This file serves two purposes: Getting crucial info about your site and setting site-wide data variables. The flags that Mandy absolutely needs are:</p>
+
+<ul>
+<li><code>dev_url</code>: What <code>baseurl</code> to use for local development.</li>
+
+<li><code>prod_url</code>: What <code>baseurl</code> to use for a production environment.</li>
+
+<li><code>tlDomain</code>: Which top-level domain is your site being served and deployed from?</li>
+
+<li><code>updateFreq</code>: How often is your site being updated? Weekly? Monthly? If you&#8217;re not sure, leave the default frequency in your site&#8217;s <code>config.json</code>.</li>
+
+<li><code>copyFiles</code>: This tells Mandy which files you would like to copy to your compiled site. The syntax is as follows: <code>true=&gt;file1|file2|file3</code>. If, instead of <code>true</code>, you have <code>false</code>, no files will be copied over.</li>
+
+<li><code>hasLoopContent</code>: This can either be <code>&quot;true&quot;</code> or <code>&quot;false&quot;</code>. This tells Mandy whether there are directories with content you would like to loop over in templates or not.</li>
+
+<li><code>loopContentDirs</code>: This setting is only required if <code>hasLoopContent</code> is set to <code>&quot;true&quot;</code>. you can specify the directories to register for looping over like this: <code>&quot;posts|another_dir&quot;</code>.</li>
+</ul>
+
+<p>Any other flags are not neccessary but may be needed to render data in templates. All flags set in <code>config.json</code> with the exception of the previous four can be called with <code>{{ site.some_flag }}</code> in Liquid templates.</p>
+
+   </div>
+   <div class="spacer"></div>
+  </div>
+  <script async src="/mandys-house/assets/javascript/nav.js">
+</script>
+ </body>
+</html>

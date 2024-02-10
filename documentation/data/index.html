@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Using data files</title>
+ <meta property="og:image:type" content="image/png">
+ <meta name="twitter:image:type" content="image/png">
+ <meta property="og:image" content="/mandys-house/assets/banner/banner.png">
+ <meta property="twitter:image" content="/mandys-house/assets/banner/banner.png">
+ <meta property="og:name" content="Using data files">
+ <meta property="og:description" content="Using and rendering data in Mandy-powered sites.">
+ <meta name="twitter:name" content="Using data files">
+ <meta name="keywords" content="static-site-generator open-source mandy-ssg mandy-static-site-generator mit-license">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:image:alt" content="Using data files">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Using and rendering data in Mandy-powered sites.">
+ <meta name="twitter:description" content="Using and rendering data in Mandy-powered sites.">
+ <link rel="stylesheet" href="/mandys-house/css/index.css" type="text/css"/>
+ <link rel="apple-touch-icon" sizes="57x57" href="/mandys-house/assets/favicons/apple-icon-57x57.png">
+ <link rel="apple-touch-icon" sizes="60x60" href="/mandys-house/assets/favicons/apple-icon-60x60.png">
+ <link rel="apple-touch-icon" sizes="72x72" href="/mandys-house/assets/favicons/apple-icon-72x72.png">
+ <link rel="apple-touch-icon" sizes="76x76" href="/mandys-house/assets/favicons/apple-icon-76x76.png">
+ <link rel="apple-touch-icon" sizes="114x114" href="/mandys-house/assets/favicons/apple-icon-114x114.png">
+ <link rel="apple-touch-icon" sizes="120x120" href="/mandys-house/assets/favicons/apple-icon-120x120.png">
+ <link rel="apple-touch-icon" sizes="144x144" href="/mandys-house/assets/favicons/apple-icon-144x144.png">
+ <link rel="apple-touch-icon" sizes="152x152" href="/mandys-house/assets/favicons/apple-icon-152x152.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="/mandys-house/assets/favicons/apple-icon-180x180.png">
+ <link rel="icon" type="image/png" sizes="192x192"  href="/mandys-house/assets/favicons/android-icon-192x192.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="/mandys-house/assets/favicons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="96x96" href="/mandys-house/assets/favicons/favicon-96x96.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/mandys-house/assets/favicons/favicon-16x16.png">
+ <link rel="manifest" href="/mandys-house/assets/icon_info/manifest.json">
+ <meta name="msapplication-TileColor" content="#ffffff">
+ <meta name="msapplication-TileImage" content="/mandys-house/assets/favicons/ms-icon-144x144.png">
+ <meta name="theme-color" content="#ffffff">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&display=swap" rel="stylesheet">
+</head>
+ <body>
+  <div class="header">
+ <h1 onclick="openNav('nav');">
+  MENU
+ </h1>
+</div>
+  <div class="nav" id="nav">
+ <ul class="nav">
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/">Home</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/documentation">Documentation</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/templates">Template Sites</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/project">Project Info</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/credits">Credits</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/releases">Release Notes</a></li>
+ 
+  <li class="nav"><a class="nav" href="/mandys-house/content/sponsoring">Sponsor Mandy</a></li>
+ 
+  <li class="nav"><a class="nav" href="javascript:void(0);" onclick="closeNav('nav')">Close</a></li>
+ </ul>
+</div>
+  <div class="landing">
+ <h1 class="landing">Using data files</h1>
+ <p class="landing">Using and rendering data in Mandy-powered sites.</p>
+</div>
+  <div class="main">
+   <div class="spacer"></div>
+   <div class="content">
+    <h2 id='setting_site_data'>SETTING SITE DATA</h2>
+
+<p>Since any site needs data that describes navigation items, social media links or other things, setting this up in a Mandy-powered site is quite simple. Create a directory in the project root called <code>data</code>. In this directory you can store JSON files that contain data. If, for example, you wanted to save some navigation links in this file, you could create a file called <code>nav.json</code> and put this in it:</p>
+
+<pre><code class="language-JSON">[
+    {
+        &quot;name&quot;: &quot;Home&quot;,
+        &quot;url&quot;: &quot;&quot;
+    },
+    {
+        &quot;name&quot;: &quot;About&quot;,
+        &quot;url&quot;: &quot;content/about&quot;
+    },
+    {
+        &quot;name&quot;: &quot;Blog&quot;,
+        &quot;url&quot;: &quot;content/blog&quot;
+    }
+]</code></pre>
+
+<p>This file describes a bunch of navigation links that will appear on your site if they are called in a Liquid template.</p>
+
+<h2 id='data_in_liquid_templates'>DATA IN LIQUID TEMPLATES</h2>
+
+<p>You would call them in a Liquid template like this:</p>
+
+<pre><code class="language-Liquid">{% for item in data[&quot;nav&quot;] %}
+ &lt;li class=&quot;navigation&quot;&gt;
+  &lt;a class=&quot;navigation&quot; href=&quot;{{ site.baseurl }}{{ item.url }}&quot;&gt;{{ item.name }}&lt;/a&gt;
+ &lt;/li&gt;
+{% endfor %}</code></pre>
+
+<p>Note the use of the <code>[&quot;nav&quot;]</code> key. This key coincides with the name of the JSON data file. Support for other data storage formats is planned.</p>
+
+   </div>
+   <div class="spacer"></div>
+  </div>
+  <script async src="/mandys-house/assets/javascript/nav.js">
+</script>
+ </body>
+</html>
