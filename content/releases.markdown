@@ -8,12 +8,13 @@ description: "Changelog info for Mandy versions."
 
 ### [LATEST] Version 0.3.4
 
-- Add support for YAML - done.
-- Add support for TOML - done.
-- Add build logs with timestamps - done.
-- Add the automatic generation of an RSS feed for iterative content - done.
-- Add the automatic generation of a JSON API for iterative content - done.
-- Add support for categories of content in iterative content - done.
+- Add support for YAML.
+- Add support for TOML.
+- Add build logs with timestamps.
+- Significantly sped up Mandy's GitHub Action.
+- Add the automatic generation of an RSS feed for iterative content.
+- Add the automatic generation of a JSON API for iterative content.
+- Add support for categories of content in iterative content.
 
 ### Version 0.3.3
 
