@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Contributing"
+date: "2024/02/10"
 description: "Contribute to Mandy."
 ---
 

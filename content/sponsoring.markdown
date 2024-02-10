@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Sponsor Mandy"
+date: "2024/02/10"
 description: "How to sponsor the Mandy project"
 ---
 

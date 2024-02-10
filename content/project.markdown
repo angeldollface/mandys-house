@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Project Info"
+date: "2024/02/10"
 description: "Project Info."
 ---
 

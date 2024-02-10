@@ -1,5 +1,6 @@
 ---
 layout: "layouts/page.liquid"
+date: "2024/02/10"
 title: "Scaffolding a site"
 description: "Scaffolding a new Mandy-powered site."
 ---

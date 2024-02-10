@@ -1,5 +1,6 @@
 ---
 layout: "layouts/page.liquid"
+date: "2024/02/10"
 title: "Handling static assets"
 description: "Handling static assets in your Mandy-powered site."
 ---

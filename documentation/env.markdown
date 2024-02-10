@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Environment variables"
+date: "2024/02/10"
 description: "Setting different variables for different environments."
 ---
 

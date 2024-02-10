@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Using Liquid Layouts"
+date: "2024/02/10"
 description: "Making layouts for a Mandy-powered site."
 ---
 

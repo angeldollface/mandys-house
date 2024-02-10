@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "MANDY"
+date: "2024/02/10"
 description: "A hypersonic static-site generator written in Rust."
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "How to use Markdown"
+date: "2024/02/10"
 description: "Using Markdown in your Mandy-powered site."
 ---
 

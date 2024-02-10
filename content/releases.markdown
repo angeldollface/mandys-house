@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Release Notes"
+date: "2024/02/10"
 description: "Changelog info for Mandy versions."
 ---
 

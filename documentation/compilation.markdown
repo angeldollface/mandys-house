@@ -1,5 +1,6 @@
 ---
 layout: "layouts/page.liquid"
+date: "2024/02/10"
 title: "Compiling"
 description: "Compiling a Mandy-powered site."
 ---

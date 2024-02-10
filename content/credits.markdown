@@ -2,6 +2,7 @@
 layout: "layouts/page.liquid"
 title: "Who made Mandy"
 description: "Who made Mandy?"
+date: "2024/02/10"
 ---
 
 ## WHO MADE MANDY?

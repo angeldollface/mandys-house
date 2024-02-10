@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Template Sites"
+date: "2024/02/10"
 description: "Template Sites that currently exist for Mandy."
 ---
 
@@ -36,7 +37,6 @@ description: "Template Sites that currently exist for Mandy."
 - GitHub repository: [Visit](https://github.com/angeldollface/mandy-netlify) 
 - Command: `mandy -i mysite -w angeldollface/mandy-netlify`.
 - Description: A small site template optimized for deployment on Netlify.
-- Showcase: [Visit](https://angeldollface.art/mandy-netlify)
 - Creator: [Angel Dollface](https://github.com/angeldollface)
 - Support: [Get support here.](https://github.com/angeldollface/mandy-netlify/issues)
 

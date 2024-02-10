@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Configuring a Mandy site"
+date: "2024/02/10"
 description: "How to configure your Mandy site."
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Mandy's icons"
+date: "2024/02/10"
 description: "Icons that Mandy has."
 ---
 

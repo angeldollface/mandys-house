@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Deploying your site"
+date: "2024/02/10"
 description: "Deploying your Mandy site on GitHub Pages."
 ---
 
@@ -21,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: angeldollface/mandy-github-action@v.0.3.3
+      - uses: angeldollface/mandy-github-action@v.0.3.4
       - name: "Build the Mandy site"
         run: mandy -c .
       - name: "Deploy"

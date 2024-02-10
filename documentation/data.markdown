@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Using data files"
+date: "2024/02/10"
 description: "Using and rendering data in Mandy-powered sites."
 ---
 

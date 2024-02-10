@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Mandy's documentation"
+date: "2024/02/10"
 description: "An overview of what you need to know to use Mandy."
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Installing Mandy"
+date: "2024/02/10"
 description: "Installing Mandy on your machine or server."
 ---
 
