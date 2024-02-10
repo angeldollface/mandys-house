@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://angeldollface.art/mandys-house/sitemap.xml
