@@ -69,7 +69,9 @@ description: "Changelog info for Mandy versions."
 
 ### Version 0.3.5
 
-- Add Clippy linting.
-- Add unit tests in sub-crates where practical.
 - Overhaul website.
-- General housekeeping.
+- Add Clippy linting.
+- Write extensive documentation.
+- Add masking module for masking secrets.
+- Add unit tests in sub-crates where practical.
+- General housekeeping: Update dependencies & try to get binary size down.
