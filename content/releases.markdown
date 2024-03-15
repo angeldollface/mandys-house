@@ -72,6 +72,9 @@ description: "Changelog info for Mandy versions."
 - Overhaul website.
 - Add Clippy linting.
 - Write extensive documentation.
+- Relicense Mandy under the GNU GPL v3.
 - Add masking module for masking secrets.
 - Add unit tests in sub-crates where practical.
 - General housekeeping: Update dependencies & try to get binary size down.
+- Add a feature that supports any codehosting servers for fetching templates.
+- Add a possibility for environment variables to be used as template variables.
