@@ -71,8 +71,11 @@ description: "Changelog info for Mandy versions."
 
 - Overhaul website.
 - Add Clippy linting.
+- Add support for Vento.
+- Add support for Dollmarkup.
 - Write extensive documentation.
 - Relicense Mandy under the GNU GPL v3.
+- Add support for Nunjucks, if possible.
 - Add masking module for masking secrets.
 - Add unit tests in sub-crates where practical.
 - General housekeeping: Update dependencies & try to get binary size down.
